@@ -24,6 +24,7 @@ const VirtualDom = () => {
                     <li>Virtual DOM, in simple terms, is nothing but the complete and full representation of an actual DOM.</li>
                     <li>Since any changes to the DOM causes the page to re-render more often than not, Virtual DOM primarily attempts to avoid any unnecessary and expensive changes to the DOM.</li>
                     <li>This is achieved by grouping changes and doing a single re-render instead of several small ones.</li>
+                    <li>VueJS and ReactJS both use Virtual DOM.</li>
                 </ul> <br />
 
                 <strong>Shadow DOM:</strong>
@@ -31,6 +32,7 @@ const VirtualDom = () => {
                     <li>Shadow DOM, on the other hand, relates mostly to the concept of encapsulation. It is a tool that allows developers to overcome DOM encapsulation.</li>
                     <li>It refers to the browser's potential to add a subtree of DOM elements into the rendering of a document, but not into the DOM tree of the main document.</li>
                     <li>Thus, it isolates the DOM and ensures that the DOM of a component is a separate element that won't appear in a global DOM.</li>
+                    <li>Contrary to the DOM, Shadow DOM occurs in smaller pieces, implying that (unlike the Virtual DOM) it is not a complete representation of the entire DOM.</li>
                 </ul>
             </p>
 
