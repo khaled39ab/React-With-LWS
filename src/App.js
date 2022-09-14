@@ -1,5 +1,6 @@
 import './App.css';
 import AboutReact from './class/AboutReact';
+import Prerequisites from './class/Prerequisites';
 import VirtualDom from './class/VirtualDom';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <AboutReact></AboutReact>
       <VirtualDom></VirtualDom>
+      <Prerequisites></Prerequisites>
     </div>
   );
 }

@@ -7,7 +7,13 @@ const Prerequisites = () => {
             <ul>
                 <li>Html & Css</li>
                 <li>Modern Javascript</li>
-                <li></li>
+                <li>Basic knowledge of React</li>
+                <li>Some Basic setup</li>
+                <ul>
+                    <li>Node</li>
+                    <li>npm/yarn</li>
+                    <li>VSCode</li>
+                </ul>
             </ul>
         </div>
     );
