@@ -20,6 +20,12 @@ const Component = () => {
             <p>
                 Props stand for "Properties." They are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It gives a way to pass data from one component to other components. It is similar to function arguments. Props are passed to the component in the same way as arguments passed in a function.
             </p>
+
+            <p>
+                Props are <strong>immutable</strong> so we cannot modify the props from inside the component. Inside the components, we can add attributes called props. These attributes are available in the component as <strong>this.props</strong> and can be used to render dynamic data in our render method.
+
+                When you need immutable data in the component, you have to add props to <strong>reactDom.render()</strong> method in the <strong>main.js</strong> file of your ReactJS project and used it inside the component in which you need. It can be explained in the below example.
+            </p>
         </div>
     );
 };
