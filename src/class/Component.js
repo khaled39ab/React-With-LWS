@@ -31,13 +31,26 @@ const Component = () => {
                 There are two way of using props.
                 <ol>
                     <li><strong>Props without destructuring</strong></li>
-                        <ul>
-                            <li>Step 1 - Pass in props as an argument</li>
-                            <p><small>The first line of the code <strong>function Tool(props){}. </strong>This automatically allows you to use props in your React app's component.</small></p>
-                            <li>Step 2 - Declare props variable(s)</li>
-                        </ul>
+
+                    <ul>
+                        <li>Step 1 - Pass in props as an argument</li>
+                        <p><small>The first line of the code <strong>function Tool(props){ }. </strong>This automatically allows you to use props in your React app's component.</small></p>
+
+                        <li>Step 2 - Declare props variable(s)</li>
+                        <p><small>If do not want to create variables for props, we can go ahead and pass them directly into template like this: &lt;h1&gt; My name is <strong>&#123;props.name&#125;</strong> &lt;/h1&gt;</small></p>
+
+                        <li>Step 3 - Use variable(s) in JSX template</li>
+                        <p><small>Now we have declared our variables, we can go on and place them where we want them to be in our code.</small></p>
+
+                        <li>Step 4 - Pass data to props in the <strong>App</strong>  component</li>
+                        <p><small>We are done creating our props, so the next step is to pass data to them. We have already imported the Tool component and this is displayed in the browser at the moment</small></p>
+                    </ul>
+
+
                     <li><strong>Props with destructuring</strong></li>
-                    <p><small>If do not want to create variables for props, you can go ahead and pass them directly into your template like this: &lt;h1&gt; My name is {<strong>props.name</strong>} &lt;/h1&gt;</small></p>
+                    <p>The code for this section is entirely the same as the last section except for the method for declaring the props.</p>
+                    <p>Props with destructuring template like this: <strong>function Tool(&#123;name, tool&#125;)</strong></p>
+
                 </ol>
             </p>
         </div>
