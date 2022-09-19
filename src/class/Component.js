@@ -11,8 +11,8 @@ const Component = () => {
             <p>
                 There are 2 types of component.
                 <ol>
-                    <li>Class components</li>
-                    <li>Function components</li>
+                    <li><strong>Class components</strong></li>
+                    <li><strong>Function components</strong></li>
                 </ol>
             </p>
 
@@ -31,7 +31,13 @@ const Component = () => {
                 There are two way of using props.
                 <ol>
                     <li><strong>Props without destructuring</strong></li>
+                        <ul>
+                            <li>Step 1 - Pass in props as an argument</li>
+                            <p><small>The first line of the code <strong>function Tool(props){}. </strong>This automatically allows you to use props in your React app's component.</small></p>
+                            <li>Step 2 - Declare props variable(s)</li>
+                        </ul>
                     <li><strong>Props with destructuring</strong></li>
+                    <p><small>If do not want to create variables for props, you can go ahead and pass them directly into your template like this: &lt;h1&gt; My name is {<strong>props.name</strong>} &lt;/h1&gt;</small></p>
                 </ol>
             </p>
         </div>
