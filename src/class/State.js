@@ -29,6 +29,16 @@ const State = () => {
                     </li>
                 </ul>
             </p>
+
+            <h2>Conventions of Using State in React</h2>
+            <p>
+                State of a component should prevail throughout the lifetime, thus we must first have some initial state, to do so we should define the State in the constructor of the component’s class.
+            </p>
+            <p>
+                State should never be updated explicitly. React uses an observable object as the state that observes what changes are made to the state and helps the component behave accordingly. For example, if we update the state of any component like the following the webpage will not re-render itself because React State will not be able to detect the changes made.
+
+                "this.state.attribute = 'new-value';"
+            </p>
         </div>
     );
 };
