@@ -11,12 +11,23 @@ const State = () => {
 
                 <br /> <br />
 
-                The state is an instance of React Component Class can be defined as an object of a set of observable properties that control the behavior of the component. In other words, the State of a component is an object that holds some information that may change over the lifetime of the component. 
+                The state is an instance of React Component Class can be defined as an object of a set of observable properties that control the behavior of the component. In other words, the State of a component is an object that holds some information that may change over the lifetime of the component.
             </p>
 
             <h2>What is the difference between state and props?</h2>
             <p>
                 <strong>props</strong> (short for “properties”) and <strong>state</strong>  are both plain JavaScript objects. While both hold information that influences the output of render, they are different in one important way: <strong>props</strong> get passed to the component (similar to function parameters) whereas <strong>state</strong> is managed within the component (similar to variables declared within a function).
+
+                <br />
+                We have already learned about Props and we got to know that Props are also objects that hold information to control the behavior of that particular component, sounds familiar to State indeed but props and states are nowhere near be same. Let us differentiate the two.
+                <ul>
+                    <li>
+                        Props are immutable i.e. once set the props cannot be changed, while State is an observable object that is to be used to hold data that may change over time and to control the behavior after each change.
+                    </li>
+                    <li>
+                        States can be used in Class Components, Functional components with the use of React Hooks (useState and other methods) while Props don’t have this limitation.
+                    </li>
+                </ul>
             </p>
         </div>
     );
