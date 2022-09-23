@@ -24,6 +24,17 @@ const Component = () => {
                     </p>
                 </ol>
             </p>
+            <h2>Converting a Function to a Class</h2>
+            <p>
+            You can convert a function component like Clock to a class in five steps:
+                <ol>
+                    <li>Create an ES6 class, with the same name, that extends React.Component.</li>
+                    <li>Add a single empty method to it called render().</li>
+                    <li>Move the body of the function into the render() method.</li>
+                    <li>Replace props with this.props in the render() body.</li>
+                    <li>Delete the remaining empty function declaration.</li>
+                </ol>
+            </p>
 
             <h1>React Props</h1>
             <p>
