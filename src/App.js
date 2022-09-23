@@ -3,6 +3,7 @@ import AboutReact from './class/AboutReact';
 import Component from './class/Component';
 import Jsx from './class/Jsx';
 import Prerequisites from './class/Prerequisites';
+import State from './class/State';
 import VirtualDom from './class/VirtualDom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Prerequisites></Prerequisites>
       <Jsx></Jsx>
       <Component></Component>
+      <State></State>
     </div>
   );
 }

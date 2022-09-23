@@ -8,6 +8,10 @@ const State = () => {
                 React components has a built-in state object.
                 The state object is where you store property values that belongs to the component.
                 When the state object changes, the component re-renders.
+
+                <br /> <br />
+
+                The state is an instance of React Component Class can be defined as an object of a set of observable properties that control the behavior of the component. In other words, the State of a component is an object that holds some information that may change over the lifetime of the component. 
             </p>
 
             <h2>What is the difference between state and props?</h2>

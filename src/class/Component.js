@@ -12,7 +12,16 @@ const Component = () => {
                 There are 2 types of component.
                 <ol>
                     <li><strong>Class components</strong></li>
+                    <p>
+                        A class component must include the extends React.Component statement. This statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
+                        The component also requires a render() method, this method returns HTML.
+                    </p>
+                    <br />
+
                     <li><strong>Function components</strong></li>
+                    <p>
+                        A Function component also returns HTML, and behaves much the same way as a Class component, but Function components can be written using much less code, are easier to understand, and will be preferred in this tutorial.
+                    </p>
                 </ol>
             </p>
 
