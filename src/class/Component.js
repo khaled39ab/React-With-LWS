@@ -46,6 +46,8 @@ const Component = () => {
 
                 When you need immutable data in the component, you have to add props to <strong>reactDom.render()</strong> method in the <strong>main.js</strong> file of your ReactJS project and used it inside the component in which you need. It can be explained in the below example.
             </p>
+
+            
             <h2>How to use props in React</h2>
             <p>
                 There are two way of using props.

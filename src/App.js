@@ -1,5 +1,6 @@
 import './App.css';
 import AboutReact from './class/AboutReact';
+import Class from './class/Class';
 import Component from './class/Component';
 import Jsx from './class/Jsx';
 import Prerequisites from './class/Prerequisites';
@@ -15,6 +16,7 @@ function App() {
       <Jsx></Jsx>
       <Component></Component>
       <State></State>
+      <Class></Class>
     </div>
   );
 }
