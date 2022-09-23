@@ -1,10 +1,10 @@
 import React from 'react';
-import AboutReact from './class/AboutReact';
-import Component from './class/Component';
-import Jsx from './class/Jsx';
-import Prerequisites from './class/Prerequisites';
-import State from './class/State';
-import VirtualDom from './class/VirtualDom';
+import AboutReact from './AboutReact';
+import Component from './Component';
+import State from './State';
+import Jsx from './Jsx';
+import Prerequisites from './Prerequisites';
+import VirtualDom from './VirtualDom';
 
 const Class = () => {
     return (
