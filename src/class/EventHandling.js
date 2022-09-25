@@ -1,5 +1,6 @@
 import React from 'react';
 import handlingEvent from './../images/HandlingEvent.PNG'
+import handlingEvent2 from './../images/HandlingEvent2.PNG'
 
 const EventHandling = () => {
     const handleEvent = () =>{
@@ -15,6 +16,9 @@ const EventHandling = () => {
                     <li>With JSX you pass a function as the event handler, rather than a string.</li>
                     <li>Another difference is that you cannot return false to prevent default behavior in React. You must call preventDefault explicitly. For example, with plain HTML, to prevent the default form behavior of submitting, we can write: <br />
                         <img src={handlingEvent} alt="" />
+                        <br />
+                        In React, this could instead be: <br />
+                        <img src={handlingEvent2} alt="" />
                     </li>
                 </ul>
             </p>
