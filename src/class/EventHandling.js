@@ -1,6 +1,7 @@
 import React from 'react';
 import handlingEvent from './../images/HandlingEvent.PNG'
 import handlingEvent2 from './../images/HandlingEvent2.PNG'
+import handlingEvent3 from './../images/HandlingEvent3.PNG'
 
 const EventHandling = () => {
     const handleEvent = () => {
@@ -15,7 +16,7 @@ const EventHandling = () => {
                     <li>React events are named using camelCase, rather than lowercase.</li>
                     <li>With JSX you pass a function as the event handler, rather than a string.</li>
 
-                    <button style={{ 'border': '2px solid rose', 'backgroundColor': '#728FCE', 'padding': '5px'}} onClick={handleEvent}>Click Me</button>
+                    <button style={{ 'border': '2px solid rose', 'backgroundColor': '#728FCE', 'padding': '5px' }} onClick={handleEvent}>Click Me</button>
 
                     <li>Another difference is that you cannot return false to prevent default behavior in React. You must call preventDefault explicitly. For example, with plain HTML, to prevent the default form behavior of submitting, we can write: <br />
                         <img src={handlingEvent} alt="" />
@@ -24,6 +25,14 @@ const EventHandling = () => {
                         <img src={handlingEvent2} alt="" />
                     </li>
                 </ul>
+            </p>
+
+            <h3>Handling Event in class component</h3>
+            <p>
+                When you define a component using an ES6 class, a common pattern is for an event handler to be a method on the class. For example, this Toggle component renders a button that lets the user toggle between “ON” and “OFF” states:
+                Example: <br />
+
+                <img src={handlingEvent3} alt="" />
             </p>
 
         </div>
