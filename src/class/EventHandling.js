@@ -3,7 +3,7 @@ import handlingEvent from './../images/HandlingEvent.PNG'
 import handlingEvent2 from './../images/HandlingEvent2.PNG'
 
 const EventHandling = () => {
-    const handleEvent = () =>{
+    const handleEvent = () => {
         alert('Button Clicked')
     }
     return (
@@ -14,6 +14,9 @@ const EventHandling = () => {
                 <ul>
                     <li>React events are named using camelCase, rather than lowercase.</li>
                     <li>With JSX you pass a function as the event handler, rather than a string.</li>
+
+                    <button style={{ 'border': '2px solid rose', 'backgroundColor': '#728FCE', 'padding': '5px'}} onClick={handleEvent}>Click Me</button>
+
                     <li>Another difference is that you cannot return false to prevent default behavior in React. You must call preventDefault explicitly. For example, with plain HTML, to prevent the default form behavior of submitting, we can write: <br />
                         <img src={handlingEvent} alt="" />
                         <br />
@@ -23,7 +26,6 @@ const EventHandling = () => {
                 </ul>
             </p>
 
-            <button onClick={handleEvent}>Click Me</button>
         </div>
     );
 };
