@@ -6,7 +6,7 @@ import Jsx from './Jsx';
 import Prerequisites from './Prerequisites';
 import VirtualDom from './VirtualDom';
 import EventHandling from './EventHandling';
-import Rendering from './rendering';
+import Rendering from './Rendering';
 
 const Class = () => {
     return (
