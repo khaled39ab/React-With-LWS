@@ -7,6 +7,7 @@ import Prerequisites from './Prerequisites';
 import VirtualDom from './VirtualDom';
 import EventHandling from './EventHandling';
 import Rendering from './Rendering';
+import ClassComponent from '../component/ClassComponent';
 
 const Class = () => {
     return (
@@ -19,6 +20,7 @@ const Class = () => {
             <State></State>
             <EventHandling></EventHandling>
             <Rendering></Rendering>
+            <ClassComponent></ClassComponent>
         </div>
     );
 };
