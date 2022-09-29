@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ClassComponent extends Component {
     render() {
         return (
-            <div>
+            <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px' }}>
                 <h1>This is from Class component.</h1>
                 <h3>Class components</h3>
                 <p>

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ForceUpdate extends Component {
     render() {
         return (
-            <div>
+            <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px' }}>
                 <h1>This is about forceUpdate method</h1>
 
                 <h2>What is forceUpdate method?</h2>
@@ -15,8 +15,8 @@ class ForceUpdate extends Component {
                 </p>
 
                 <h2>Difference between forceUpdate vs setState method</h2>
+                <p style={{ 'textAlign': 'center' }}> <strong>Difference between forceUpdate vs setState method are:</strong></p>
                 <p>
-                    Difference between forceUpdate vs setState method are:
                     <table>
                         <tr>
                             <th>forceUpdate</th>

@@ -8,6 +8,7 @@ import VirtualDom from './VirtualDom';
 import EventHandling from './EventHandling';
 import Rendering from './Rendering';
 import ClassComponent from '../component/ClassComponent';
+import ForceUpdate from '../component/ForceUpdate';
 
 const Class = () => {
     return (
@@ -21,6 +22,7 @@ const Class = () => {
             <EventHandling></EventHandling>
             <Rendering></Rendering>
             <ClassComponent></ClassComponent>
+            <ForceUpdate></ForceUpdate>
         </div>
     );
 };
