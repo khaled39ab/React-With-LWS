@@ -1,11 +1,19 @@
 import React from 'react';
+import { useState } from 'react';
 
 const SingleForm = () => {
+    const [name, setName] = useState('A');
+
+    const nameField = (e) => {
+        let inputName = e.target.value;
+        setName({ inputName })
+    }
     return (
-        <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', 'textAlign': 'center'}}>
+        <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', 'textAlign': 'center' }}>
             <form action="">
                 <h1>A simple form</h1>
-                <input type="text" placeholder='Your Name' /> <br />
+                <p>{name}</p>
+                <input onChange={() => nameField()} type="text" placeholder='Your Name' /> <br />
                 <input type="submit" value="Submit" />
             </form>
         </div>
