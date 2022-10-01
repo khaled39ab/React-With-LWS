@@ -1,13 +1,21 @@
 import React from 'react';
+import { useState } from 'react';
 
 const MultipleInput = () => {
 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [adress, setAddress] = useState('');
     const handleSubmit = (e) => {
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const address = e.target.address.value;
-        const info ='Name: ' + name + '\n' + 'email: ' + email + '\n' + 'Address: ' + address;
-        alert('Check your info ' + '\n' + info )
+        const nameInput = e.target.name.value;
+        const emailInput = e.target.email.value;
+        const addressInput = e.target.address.value;
+        // const info ='Name: ' + name + '\n' + 'email: ' + email + '\n' + 'Address: ' + address;
+        // alert('Check your info ' + '\n' + info )
+
+        setName(nameInput);
+        setEmail(emailInput);
+        setAddress(addressInput);
     }
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', 'textAlign': 'center' }}>
