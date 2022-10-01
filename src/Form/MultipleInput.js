@@ -7,7 +7,7 @@ const MultipleInput = () => {
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
     const handleSubmit = (e) => {
-        const nameInput = e.target.name.value;
+        /* const nameInput = e.target.name.value;
         const emailInput = e.target.email.value;
         const addressInput = e.target.address.value;
         // const info ='Name: ' + name + '\n' + 'email: ' + email + '\n' + 'Address: ' + address;
@@ -15,7 +15,13 @@ const MultipleInput = () => {
 
         setName(nameInput);
         setEmail(emailInput);
-        setAddress(addressInput);
+        setAddress(addressInput); */
+
+        e.preventDefault();
+        setName(e.target.name.value);
+        setEmail(e.target.email.value);
+        setAddress(e.target.address.value);
+        e.target.reset();
     }
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', 'textAlign': 'center' }}>
@@ -27,9 +33,9 @@ const MultipleInput = () => {
                     <strong>Email: {email}</strong> <br />
                     <strong>Address: {address}</strong>
                 </p>
-                <input name='name' type="text" placeholder='Enter Your Name' /> <br />
-                <input name='email' type="email" placeholder='Enter Your Email' /> <br />
-                <textarea name="address" id="" cols="21" rows="2" placeholder='Enter Your Address'></textarea> <br />
+                <input name='name' type="text" placeholder='Enter Your Name' required/> <br />
+                <input name='email' type="email" placeholder='Enter Your Email' required/> <br />
+                <textarea name="address" id="" cols="21" rows="2" placeholder='Enter Your Address' required></textarea> <br />
                 <input type="submit" value="Submit" />
             </form>
         </div>
