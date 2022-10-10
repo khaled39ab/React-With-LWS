@@ -1,0 +1,21 @@
+.navbar-container{
+    height: 60px;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.icon h1{
+    margin: 0;
+    color: rebeccapurple;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+.nav{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+}
