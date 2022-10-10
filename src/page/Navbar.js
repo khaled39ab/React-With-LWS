@@ -6,12 +6,12 @@ const Navbar = () => {
     return (
         <div className='navbar-container'>
             <div className='icon'>
-                <h1>Learn React</h1>
+                <h1>LEARN REACT</h1>
             </div>
             <div className='nav'>
-                <Link to={'/'}>Home</Link>
-                <Link to={'/class'}>Class</Link>
-                <Link to={'/form'}>Form</Link>
+                <Link className='link' to={'/'}>Home</Link>
+                <Link className='link' to={'/class'}>Class</Link>
+                <Link className='link' to={'/form'}>Form</Link>
             </div>
         </div>
     );

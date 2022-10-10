@@ -1,6 +1,7 @@
 .navbar-container{
-    height: 60px;
-    background-color: lightskyblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(65, 177, 247);
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -10,12 +11,14 @@
     margin: 0;
     color: rebeccapurple;
     padding-left: 20px;
-    text-decoration: underline;
+    text-decoration: line-through;
 }
 .nav{
     font-size: 32px;
-    color: white;
+}
+
+.link{
+    margin-right: 30px;
     text-decoration: none;
-    display: flex;
-    justify-content: space-evenly;
+    color: white;
 }
