@@ -12,6 +12,7 @@ const Navbar = () => {
                 <Link className='link' to={'/'}>Home</Link>
                 <Link className='link' to={'/class'}>Class</Link>
                 <Link className='link' to={'/form'}>Form</Link>
+                <Link className='link' to={'/http'}>Http Req</Link>
             </div>
         </div>
     );
