@@ -6,6 +6,12 @@ import CountryInfo from './CountryInfo';
 const Country = () => {
     const [countries, setCountries] = useState([]);
 
+    const countriesStyle = {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        gridGap: '15px',
+        padding: '15px'
+    }
     axios.get('https://restcountries.com/v3.1/all')
         .then(res => {
             setCountries(res.data);
@@ -17,7 +23,7 @@ const Country = () => {
     return (
         <div>
             <h1 style={{color:'blue'}}>Introduce Country</h1>
-            <div>
+            <div style={countriesStyle}>
                 {
                     countries.map(country => 
                         <CountryInfo
