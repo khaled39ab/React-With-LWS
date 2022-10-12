@@ -17,7 +17,7 @@ function App() {
         <Route path="/class" element={<Class></Class>}></Route>
         <Route path="/form" element={<Form></Form>}></Route>
         <Route path="/http" element={<HttpReq></HttpReq>}></Route>
-        <Route path="/country-info" element={<Country></Country>}></Route>
+        <Route path="/get" element={<Country></Country>}></Route>
       </Routes>
       
     </div>

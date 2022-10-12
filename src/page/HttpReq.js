@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 const HttpReq = () => {
     const listStyle = {
         textDecoration: 'none',
-        color: 'green',
         fontSize: '28px',
         backgroundColor: 'yellowgreen',
         padding: '10px',
@@ -15,7 +14,9 @@ const HttpReq = () => {
         <div style={{marginRight: '40px'}}>
             <ul>
                 <li style={listStyle}>
-                    <Link className='link' to={'/country-info'}>Country Info</Link>
+                    <Link className='link' to={'/get'}>Get</Link>
+                    <Link className='link' to={'/post'}>Post</Link>
+                    <Link className='link' to={'/more'}>More</Link>
                 </li>
             </ul>
         </div>
