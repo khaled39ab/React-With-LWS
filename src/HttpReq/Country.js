@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
+import HttpReq from '../page/HttpReq';
 import CountryInfo from './CountryInfo';
 
 const Country = () => {
@@ -22,6 +23,7 @@ const Country = () => {
         
     return (
         <div>
+            <HttpReq></HttpReq>
             <h1 style={{color:'blue'}}>Introduce Country</h1>
             <div style={countriesStyle}>
                 {

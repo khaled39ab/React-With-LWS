@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
+import HttpReq from '../page/HttpReq';
 
 const QuotesGenerator = () => {
     const [author, setAuthor] = useState('');
@@ -30,13 +31,16 @@ const QuotesGenerator = () => {
             })
     }
     return (
-        <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', textAlign: 'center' }} onClick={handleSubmit}>
-            <h1>Add Quotes</h1>
-            <h5>{author}</h5>
-            <p>{quote}</p>
-            <input type="text" placeholder='Author' required onChange={authorName} /> <br /> <br />
-            <textarea name="Quotes" id="" cols="30" rows="10" placeholder='Write Quote' onChange={quoteContent}></textarea> <br />
-            <input type="submit" value="New Quote" />
+        <div>
+            <HttpReq></HttpReq>
+            <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', textAlign: 'center' }} onClick={handleSubmit}>
+                <h1>Add Quotes</h1>
+                <h5>{author}</h5>
+                <p>{quote}</p>
+                <input type="text" placeholder='Author' required onChange={authorName} /> <br /> <br />
+                <textarea name="Quotes" id="" cols="30" rows="10" placeholder='Write Quote' onChange={quoteContent}></textarea> <br />
+                <input type="submit" value="New Quote" />
+            </div>
         </div>
     );
 };
