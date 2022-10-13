@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
-import HttpReq from '../page/HttpReq';
 import CountryInfo from './CountryInfo';
+import HttpNavbar from './HttpNavbar';
 
 const Country = () => {
     const [countries, setCountries] = useState([]);
@@ -23,7 +23,7 @@ const Country = () => {
         
     return (
         <div>
-            <HttpReq></HttpReq>
+            <HttpNavbar></HttpNavbar>
             <h1 style={{color:'blue'}}>Introduce Country</h1>
             <div style={countriesStyle}>
                 {

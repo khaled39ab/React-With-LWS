@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
-import HttpReq from '../page/HttpReq';
+import HttpNavbar from './HttpNavbar';
 
 const QuotesGenerator = () => {
     const [author, setAuthor] = useState('');
@@ -32,7 +32,7 @@ const QuotesGenerator = () => {
     }
     return (
         <div>
-            <HttpReq></HttpReq>
+            <HttpNavbar></HttpNavbar>
             <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', textAlign: 'center' }} onClick={handleSubmit}>
                 <h1>Add Quotes</h1>
                 <h5>{author}</h5>
