@@ -27,6 +27,7 @@ const More = () => {
     }
 
     const { content, author } = quote;
+    
     return (
         <div>
             <HttpNavbar></HttpNavbar>

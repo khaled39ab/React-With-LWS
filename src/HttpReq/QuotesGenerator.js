@@ -7,7 +7,7 @@ const QuotesGenerator = () => {
     const [author, setAuthor] = useState('');
     const [quote, setQuote] = useState('');
 
-    const url = 'https://api.quotable.io/random';
+    const url = '';
 
     const authorName = (e) => {
         setAuthor(e.target.value)
@@ -29,6 +29,9 @@ const QuotesGenerator = () => {
             .catch(err => {
                 console.log(err);
             })
+
+        e.authorText.target.reset();
+        e.quotesText.target.reset();
     }
     return (
         <div>
@@ -37,8 +40,8 @@ const QuotesGenerator = () => {
                 <h1>Add Quotes</h1>
                 <h5>{author}</h5>
                 <p>{quote}</p>
-                <input type="text" placeholder='Author' required onChange={authorName} /> <br /> <br />
-                <textarea name="Quotes" id="" cols="30" rows="10" placeholder='Write Quote' onChange={quoteContent}></textarea> <br />
+                <input type="text" name='authorText' placeholder='Author' required onChange={authorName} /> <br /> <br />
+                <textarea name="QuotesText" id="" cols="30" rows="10" placeholder='Write Quote' onChange={quoteContent}></textarea> <br />
                 <input type="submit" value="New Quote" />
             </div>
         </div>
