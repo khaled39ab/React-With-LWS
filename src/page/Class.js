@@ -9,6 +9,7 @@ import EventHandling from './../class/EventHandling';
 import Rendering from './../class/Rendering';
 import ClassComponent from './../component/ClassComponent';
 import ForceUpdate from './../component/ForceUpdate';
+import Hooks from '../class/Hooks';
 
 const Class = () => {
     return (
@@ -23,6 +24,7 @@ const Class = () => {
             <Rendering/>
             <ClassComponent/>
             <ForceUpdate/>
+            <Hooks></Hooks>
         </div>
     );
 };
