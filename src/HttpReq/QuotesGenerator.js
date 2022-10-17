@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useState } from 'react';
 import HttpNavbar from './HttpNavbar';
 
@@ -34,7 +34,7 @@ const QuotesGenerator = () => {
         e.quotesText.target.reset();
     }
     return (
-        <div>
+        <Fragment>
             <HttpNavbar></HttpNavbar>
             <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', textAlign: 'center' }} onClick={handleSubmit}>
                 <h1>Add Quotes</h1>
@@ -44,7 +44,7 @@ const QuotesGenerator = () => {
                 <textarea name="QuotesText" id="" cols="30" rows="10" placeholder='Write Quote' onChange={quoteContent}></textarea> <br />
                 <input type="submit" value="New Quote" />
             </div>
-        </div>
+        </Fragment>
     );
 };
 

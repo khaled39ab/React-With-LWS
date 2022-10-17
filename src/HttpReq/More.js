@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import HttpNavbar from './HttpNavbar';
@@ -27,17 +27,17 @@ const More = () => {
     }
 
     const { content, author } = quote;
-    
+
     return (
-        <div>
+        <Fragment>
             <HttpNavbar></HttpNavbar>
             <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px' }}>
                 <h1>Best Quote</h1>
-                <h4><span style={{color: 'red'}}>Author:</span> {author}</h4>
-                <h5><span style={{color: 'red'}}>Quote:</span> {content}</h5>
+                <h4><span style={{ color: 'red' }}>Author:</span> {author}</h4>
+                <h5><span style={{ color: 'red' }}>Quote:</span> {content}</h5>
                 <button onClick={getNewQuote}>Next</button>
             </div>
-        </div>
+        </Fragment>
     );
 };
 

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useState } from 'react';
 import CountryInfo from './CountryInfo';
 import HttpNavbar from './HttpNavbar';
@@ -20,14 +20,14 @@ const Country = () => {
         .catch(err => {
             console.log(err);
         });
-        
+
     return (
-        <div>
+        <Fragment>
             <HttpNavbar></HttpNavbar>
-            <h1 style={{color:'blue'}}>Introduce Country</h1>
+            <h1 style={{ color: 'blue' }}>Introduce Country</h1>
             <div style={countriesStyle}>
                 {
-                    countries.map(country => 
+                    countries.map(country =>
                         <CountryInfo
                             country={country}
                             key={country.cca3}
@@ -35,7 +35,7 @@ const Country = () => {
                     )
                 }
             </div>
-        </div>
+        </Fragment>
     );
 };
 
