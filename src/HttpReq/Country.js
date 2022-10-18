@@ -23,7 +23,9 @@ const Country = () => {
 
     return (
         <Fragment>
+
             <HttpNavbar></HttpNavbar>
+
             <h1 style={{ color: 'blue' }}>Introduce Country</h1>
             <div style={countriesStyle}>
                 {
@@ -35,6 +37,7 @@ const Country = () => {
                     )
                 }
             </div>
+            
         </Fragment>
     );
 };

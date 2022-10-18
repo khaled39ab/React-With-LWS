@@ -30,13 +30,16 @@ const More = () => {
 
     return (
         <Fragment>
+
             <HttpNavbar></HttpNavbar>
+
             <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px' }}>
                 <h1>Best Quote</h1>
                 <h4><span style={{ color: 'red' }}>Author:</span> {author}</h4>
                 <h5><span style={{ color: 'red' }}>Quote:</span> {content}</h5>
                 <button onClick={getNewQuote}>Next</button>
             </div>
+
         </Fragment>
     );
 };

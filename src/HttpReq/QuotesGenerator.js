@@ -35,7 +35,9 @@ const QuotesGenerator = () => {
     }
     return (
         <Fragment>
+
             <HttpNavbar></HttpNavbar>
+
             <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', textAlign: 'center' }} onClick={handleSubmit}>
                 <h1>Add Quotes</h1>
                 <h5>{author}</h5>
@@ -43,7 +45,9 @@ const QuotesGenerator = () => {
                 <input type="text" name='authorText' placeholder='Author' required onChange={authorName} /> <br /> <br />
                 <textarea name="QuotesText" id="" cols="30" rows="10" placeholder='Write Quote' onChange={quoteContent}></textarea> <br />
                 <input type="submit" value="New Quote" />
+
             </div>
+
         </Fragment>
     );
 };
