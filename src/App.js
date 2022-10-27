@@ -9,6 +9,7 @@ import Country from './HttpReq/Country';
 import QuotesGenerator from './HttpReq/QuotesGenerator';
 import More from './HttpReq/More';
 import Others from './page/Others';
+import Card from './page/Card';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/post" element={<QuotesGenerator></QuotesGenerator>}></Route>
         <Route path="/more" element={<More></More>}></Route>
         <Route path="/others" element={<Others></Others>}></Route>
+        <Route path="/card" element={<Card></Card>}></Route>
       </Routes>
       
     </div>
