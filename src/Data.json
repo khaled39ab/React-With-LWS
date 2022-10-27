@@ -1,0 +1,27 @@
+[
+    {
+        "name": "React",
+        "desc": "React is a JavaScript library. React is a JavaScript library.",
+        "img": "React-logo"
+    },
+    {
+        "name": "Angular",
+        "desc": "Angular is a JavaScript framework. Angular is a JavaScript framework.",
+        "img": "Angular-logo"
+    },
+    {
+        "name": "Vue",
+        "desc": "Vue is a JavaScript framework. Vue is a JavaScript framework.",
+        "img": "Vue-logo"
+    },
+    {
+        "name": "Laravel",
+        "desc": "Laravel is a PHP framework. Laravel is a PHP framework.",
+        "img": "Laravel-logo"
+    },
+    {
+        "name": "Django",
+        "desc": "Django is a Python framework. Django is a Python framework.",
+        "img": "Django-logo"
+    }
+]

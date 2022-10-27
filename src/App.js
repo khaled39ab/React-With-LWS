@@ -9,7 +9,7 @@ import Country from './HttpReq/Country';
 import QuotesGenerator from './HttpReq/QuotesGenerator';
 import More from './HttpReq/More';
 import Others from './page/Others';
-import Card from './page/Card';
+import Card from './page/cards/Card';
 
 
 function App() {
