@@ -23,5 +23,10 @@
         "name": "Django",
         "desc": "Django is a Python framework. Django is a Python framework. Django is a Python framework.",
         "img": "https://i.ibb.co/C5fxvpt/django-logo.png"
+    },
+    {
+        "name": "Node",
+        "desc": "Node is a JavaScript server side framework. Node is a JavaScript server side framework. Node is a JavaScript server side framework.",
+        "img": "https://i.ibb.co/XzNhS9P/node-logo.webp"
     }
 ]
