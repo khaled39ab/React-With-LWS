@@ -5,10 +5,10 @@ const OthersNavbar = () => {
     const listStyle = {
         textDecoration: 'none',
         fontSize: '28px',
-        backgroundColor: 'purple',
+        backgroundColor: 'aqua',
         padding: '10px',
-        color: 'white',
         marginTop: '0',
+        marginLeft: '40px',
         display: 'flex',
         justifyContent: 'space-around'
     }
