@@ -11,6 +11,7 @@ const CardGroup = () => {
         fmDesc={dt.desc}
         fmImg={dt.img}
     />)
+    
     return (
         <div>
             <OthersNavbar></OthersNavbar>

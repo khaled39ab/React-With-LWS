@@ -1,9 +1,4 @@
 import React from 'react';
-import ReactLogo from './../../images/react-logo.png';
-import AngularLogo from './../../images/angular-logo.png';
-import VueLogo from './../../images/vue-logo.png';
-import LaravelLogo from './../../images/laravel-logo.png';
-import DjangoLogo from './../../images/django-logo.png';
 import './Card.css'
 
 const Card = (props) => {
