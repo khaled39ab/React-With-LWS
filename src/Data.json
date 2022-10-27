@@ -1,27 +1,27 @@
 [
     {
         "name": "React",
-        "desc": "React is a JavaScript library. React is a JavaScript library.",
-        "img": "React-logo"
+        "desc": "React is a JavaScript library. React is a JavaScript library. React is a JavaScript library.",
+        "img": "ReactLogo"
     },
     {
         "name": "Angular",
-        "desc": "Angular is a JavaScript framework. Angular is a JavaScript framework.",
-        "img": "Angular-logo"
+        "desc": "Angular is a JavaScript framework. Angular is a JavaScript framework. Angular is a JavaScript framework.",
+        "img": "AngularLogo"
     },
     {
         "name": "Vue",
-        "desc": "Vue is a JavaScript framework. Vue is a JavaScript framework.",
-        "img": "Vue-logo"
+        "desc": "Vue is a JavaScript framework. Vue is a JavaScript framework. Vue is a JavaScript framework.",
+        "img": "VueLogo"
     },
     {
         "name": "Laravel",
-        "desc": "Laravel is a PHP framework. Laravel is a PHP framework.",
-        "img": "Laravel-logo"
+        "desc": "Laravel is a PHP framework. Laravel is a PHP framework. Laravel is a PHP framework.",
+        "img": "LaravelLogo"
     },
     {
         "name": "Django",
-        "desc": "Django is a Python framework. Django is a Python framework.",
-        "img": "Django-logo"
+        "desc": "Django is a Python framework. Django is a Python framework. Django is a Python framework.",
+        "img": "DjangoLogo"
     }
 ]

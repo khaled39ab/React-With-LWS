@@ -1,23 +1,24 @@
 import React from 'react';
-import OthersNavbar from '../OthersNavbar';
-import reactLogo from './../../images/react-logo.png';
+import ReactLogo from './../../images/react-logo.png';
+import AngularLogo from './../../images/angular-logo.png';
+import VueLogo from './../../images/vue-logo.png';
+import LaravelLogo from './../../images/laravel-logo.png';
+import DjangoLogo from './../../images/django-logo.png';
 import './Card.css'
 
-const Card = () => {
+const Card = (props) => {
+    const { fmName, fmDesc, fmImg } = props;
+    console.log( fmImg);
     return (
         <div>
-            <OthersNavbar></OthersNavbar>
-            <div>
-                <h1 className='heading'>React Card</h1>
-                <div className='card-container'>
-                    <div className='img-section'>
-                        <img src={reactLogo} alt="" />
-                    </div>
-                    <div className='card-desc'>
-                        <h2 className='card-title'>React Card</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum mollitia illum nemo?</p>
-                        <button className='card-btn'>Next</button>
-                    </div>
+            <div className='card-container'>
+                <div className='img-section'>
+                    <img src={fmImg} alt="" />
+                </div>
+                <div className='card-desc'>
+                    <h2 className='card-title'>{fmName}</h2>
+                    <p>{fmDesc}</p>
+                    <button className='card-btn'>Next</button>
                 </div>
             </div>
         </div>

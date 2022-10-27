@@ -1,0 +1,11 @@
+.heading{
+    text-align: center;
+    font-size: 42px;
+    color: purple;
+    padding: 10px;
+}
+
+.cardGroup{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
