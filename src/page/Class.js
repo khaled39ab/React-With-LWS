@@ -7,8 +7,8 @@ import Component from './../class/Component';
 import State from './../class/State';
 import EventHandling from './../class/EventHandling';
 import Rendering from './../class/Rendering';
-import ClassComponent from './../component/ClassComponent';
-import ForceUpdate from './../component/ForceUpdate';
+import ClassComponent from './../reactComponent/ClassComponent';
+import ForceUpdate from './../reactComponent/ForceUpdate';
 import Hooks from '../class/Hooks';
 
 const Class = () => {
