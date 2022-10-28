@@ -10,6 +10,7 @@ import Rendering from './../class/Rendering';
 import ClassComponent from './../reactComponent/ClassComponent';
 import ForceUpdate from './../reactComponent/ForceUpdate';
 import Hooks from '../class/Hooks';
+import NestedMapping from '../components/NestedMapping';
 
 const Class = () => {
     return (
@@ -25,6 +26,7 @@ const Class = () => {
             <ClassComponent/>
             <ForceUpdate/>
             <Hooks></Hooks>
+            <NestedMapping></NestedMapping>
         </div>
     );
 };

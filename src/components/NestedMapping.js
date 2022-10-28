@@ -29,15 +29,16 @@ const NestedMapping = () => {
     ]
 
     return (
-        <div>
+        <div style={{ 'textAlign': 'center' }}>
             <h1>Learning Nested Mapping</h1>
             {
-                users.map(user=><div>
+                users.map((user, index) => <div key={index}>
                     <h3>Name: {user.name}</h3>
                     <h4>Age: {user.age}</h4>
                     {
-                        user.address.map(add => <div>
-                            <p>Moved to {add.present} from {add.permanent}</p>
+                        user.address.map((add, index) => <div key={index}>
+                            <p> {add.permanent} </p>
+                            <p>  {add.present}</p>
                         </div>)
                     }
                 </div>)
