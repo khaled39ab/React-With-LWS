@@ -26,6 +26,7 @@
   
     width: 5rem;
     color: rgb(195, 154, 77);
+    cursor: pointer;
   }
   
   .btn:hover {
