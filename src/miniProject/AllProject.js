@@ -1,5 +1,5 @@
 import React from 'react';
-import Assignment1 from './Assignment1';
+import Assignment1 from './assignment1/Assignment1';
 
 const AllProject = () => {
     return (
