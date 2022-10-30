@@ -1,7 +1,7 @@
 import React from 'react';
 import Assignment1 from './Assignment1';
 
-const AllAssignment = () => {
+const AllProject = () => {
     return (
         <div>
             <Assignment1></Assignment1>
@@ -9,4 +9,4 @@ const AllAssignment = () => {
     );
 };
 
-export default AllAssignment;
+export default AllProject;

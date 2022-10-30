@@ -10,6 +10,7 @@ import QuotesGenerator from './HttpReq/QuotesGenerator';
 import More from './HttpReq/More';
 import Others from './page/Others';
 import CardGroup from './page/cards/CardGroup';
+import AllProject from './miniProject/AllProject';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/more" element={<More></More>}></Route>
         <Route path="/others" element={<Others></Others>}></Route>
         <Route path="/card" element={<CardGroup></CardGroup>}></Route>
+        <Route path="/all-assignment" element={<AllProject></AllProject>}></Route>
       </Routes>
       
     </div>

@@ -18,7 +18,7 @@ const OthersNavbar = () => {
                 <li style={listStyle}>
                     <Link className='link' to={'/form'}>Form</Link>
                     <Link className='link' to={'/card'}>Card</Link>
-                    {/* <Link className='link' to={'/'}>More</Link> */}
+                    <Link className='link' to={'/all-project'}>All Project</Link>
                 </li>
             </ul>
         </div>
