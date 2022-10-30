@@ -112,7 +112,12 @@ const Assignment1 = () => {
             <div className='assignment' style={{ 'margin': '10px' }}>
                 <h1 className="title">BD Store</h1>
                 <div className='products'>
-                    <Product></Product>
+                    {
+                        products.map(product => <Product
+                            key={product.id}
+                            product={product}
+                        ></Product>)
+                    }
                 </div>
             </div>
         </div>
