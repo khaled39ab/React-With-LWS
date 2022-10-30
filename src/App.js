@@ -27,7 +27,7 @@ function App() {
         <Route path="/more" element={<More></More>}></Route>
         <Route path="/others" element={<Others></Others>}></Route>
         <Route path="/card" element={<CardGroup></CardGroup>}></Route>
-        <Route path="/all-assignment" element={<AllProject></AllProject>}></Route>
+        <Route path="/all-project" element={<AllProject></AllProject>}></Route>
       </Routes>
       
     </div>
