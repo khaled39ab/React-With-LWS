@@ -18,7 +18,8 @@ const OthersNavbar = () => {
                 <li style={listStyle}>
                     <Link className='link' to={'/form'}>Form</Link>
                     <Link className='link' to={'/card'}>Card</Link>
-                    <Link className='link' to={'/all-project'}>All Project</Link>
+                    <Link className='link' to={'/all-project'}>All Mini Project</Link>
+                    <Link className='link' to={'/conditional-rendering'}>Conditional Rendering</Link>
                 </li>
             </ul>
         </div>

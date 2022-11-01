@@ -28,6 +28,7 @@ function App() {
         <Route path="/others" element={<Others></Others>}></Route>
         <Route path="/card" element={<CardGroup></CardGroup>}></Route>
         <Route path="/all-project" element={<AllProject></AllProject>}></Route>
+        {/* <Route path="/conditional-rendering" element={}></Route> */}
       </Routes>
       
     </div>
