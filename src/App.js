@@ -11,6 +11,7 @@ import More from './HttpReq/More';
 import Others from './page/Others';
 import CardGroup from './page/cards/CardGroup';
 import AllProject from './miniProject/AllProject';
+import Conditional_Rendering from './conditional-rendering/Conditional_Rendering';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
         <Route path="/others" element={<Others></Others>}></Route>
         <Route path="/card" element={<CardGroup></CardGroup>}></Route>
         <Route path="/all-project" element={<AllProject></AllProject>}></Route>
-        {/* <Route path="/conditional-rendering" element={}></Route> */}
+        <Route path="/conditional-rendering" element={<Conditional_Rendering></Conditional_Rendering>}></Route>
       </Routes>
       
     </div>
