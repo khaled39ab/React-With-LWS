@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
+import Login from './Login';
+import Permission from './Permission';
 
 class Conditional_Rendering extends Component {
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            isLoggedIn: false
+        }
+    }
+
     render() {
-        return (
-            <div>
-                <h1>Conditional Rendering Page</h1>
-            </div>
-        );
+
+        if (this.state.isLoggedIn) {
+            return <Permission></Permission>
+        } else {
+            return <Login></Login>
+        } 
+        
     }
 }
 
