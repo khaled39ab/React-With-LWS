@@ -1,7 +1,22 @@
 import React from 'react';
+import { useState } from 'react';
 import './style2.css'
 
 const Assignment2 = () => {
+    const [count, setCount] = useState(0);
+
+    const handleIncrease = () =>{
+        setCount(count + 1)
+    }
+
+    const handleDecrease = () =>{
+        setCount(count -1)
+    }
+
+    const handleReset = () =>{
+        
+    }
+
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '20px', 'margin': '10px' }}>
             <div>
@@ -37,12 +52,12 @@ const Assignment2 = () => {
             <div className='assignment2' style={{ 'margin': '10px' }}>
                 <div className="counter center">
                     <h1 className="counter__title">Counter App</h1>
-                    <div className="card center">
-                        <h2 className="card__title">Count : 0</h2>
-                        <div className="card__btn">
-                            <button className="btn2 card__btn">+</button>
-                            <button className="btn2 card__btn">-</button>
-                            <button className="btn2 card__btn">0</button>
+                    <div className="card2 center">
+                        <h2 className="card2__title">Count : {count}</h2>
+                        <div className="card2__btn">
+                            <button className="btn2 card__btn" onClick={handleIncrease}>+</button>
+                            <button className="btn2 card__btn" onClick={handleDecrease}>-</button>
+                            <button className="btn2 card__btn" onClick={handleReset}>0</button>
                         </div>
                     </div>
                 </div>
