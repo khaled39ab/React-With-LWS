@@ -109,7 +109,7 @@ const Assignment1 = () => {
             </div>
             <hr />
             <hr />
-            <div className='assignment' style={{ 'margin': '10px' }}>
+            <div className='assignment1' style={{ 'margin': '10px' }}>
                 <h1 className="title">BD Store</h1>
                 <div className='products'>
                     {
