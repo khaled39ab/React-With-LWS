@@ -5,16 +5,16 @@ import './style2.css'
 const Assignment2 = () => {
     const [count, setCount] = useState(0);
 
-    const handleIncrease = () =>{
+    const handleIncrease = () => {
         setCount(count + 1)
     }
 
-    const handleDecrease = () =>{
-        setCount(count -1)
+    const handleDecrease = () => {
+        setCount(count - 1)
     }
 
-    const handleReset = () =>{
-        
+    const handleReset = () => {
+        setCount(0)
     }
 
     return (
@@ -55,8 +55,8 @@ const Assignment2 = () => {
                     <div className="card2 center">
                         <h2 className="card2__title">Count : {count}</h2>
                         <div className="card2__btn">
-                            <button className="btn2 card__btn" onClick={handleIncrease}>+</button>
-                            <button className="btn2 card__btn" onClick={handleDecrease}>-</button>
+                            <button className="btn2 card__btn" onClick={handleIncrease} disabled={count === 5}>+</button>
+                            <button className="btn2 card__btn" onClick={handleDecrease} disabled={count === -5}>-</button>
                             <button className="btn2 card__btn" onClick={handleReset}>0</button>
                         </div>
                     </div>
