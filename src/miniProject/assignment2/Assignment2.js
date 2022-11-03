@@ -1,4 +1,5 @@
 import React from 'react';
+import './style2.css'
 
 const Assignment2 = () => {
     return (
@@ -33,7 +34,7 @@ const Assignment2 = () => {
             <hr />
             <hr />
 
-            <div style={{ 'margin': '10px' }}>
+            <div className='assignment2' style={{ 'margin': '10px' }}>
                 <div className="counter center">
                     <h1 className="counter__title">Counter App</h1>
                     <div className="card center">
