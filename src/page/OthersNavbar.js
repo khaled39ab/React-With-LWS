@@ -20,6 +20,7 @@ const OthersNavbar = () => {
                     <Link className='link' to={'/card'}>Card</Link>
                     <Link className='link' to={'/all-project'}>All Mini Project</Link>
                     <Link className='link' to={'/conditional-rendering'}>Conditional Rendering</Link>
+                    <Link className='link' to={'/todos'}>Todos</Link>
                 </li>
             </ul>
         </div>

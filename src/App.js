@@ -12,6 +12,7 @@ import Others from './page/Others';
 import CardGroup from './page/cards/CardGroup';
 import AllProject from './miniProject/AllProject';
 import Conditional_Rendering from './conditional-rendering/Conditional_Rendering';
+import TodosApp from './page/todosApp/TodosApp';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/card" element={<CardGroup></CardGroup>}></Route>
         <Route path="/all-project" element={<AllProject></AllProject>}></Route>
         <Route path="/conditional-rendering" element={<Conditional_Rendering></Conditional_Rendering>}></Route>
+        <Route path="/todos" element={<TodosApp></TodosApp>}></Route>
       </Routes>
       
     </div>

@@ -36,7 +36,7 @@ const OutputObject = () => {
                     setUser({ name, email, phone, password: e.target.value })
                 }
         */
-        setUser(...user, { [e.target.name]: e.target.value })
+        setUser({ ...user, [e.target.name]: e.target.value })
     }
 
     const handleSubmit = (e) => {
