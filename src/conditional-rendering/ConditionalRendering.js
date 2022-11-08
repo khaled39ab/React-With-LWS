@@ -3,7 +3,7 @@ import OthersNavbar from '../page/OthersNavbar';
 import Login from './Login';
 import Permission from './Permission';
 
-class Conditional_Rendering extends Component {
+class ConditionalRendering extends Component {
 
     constructor(props) {
         super(props)
@@ -34,4 +34,4 @@ class Conditional_Rendering extends Component {
     }
 }
 
-export default Conditional_Rendering;
+export default ConditionalRendering;
