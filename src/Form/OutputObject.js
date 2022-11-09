@@ -48,10 +48,10 @@ const OutputObject = () => {
         <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', 'textAlign': 'center' }}>
             <h1>Send data as object</h1>
             <form action="" onClick={handleSubmit}>
-                <input type="text" onChange={handleChange} placeholder='Enter Your Name' name='name' required /> <br />
-                <input type="email" onChange={handleChange} placeholder='Enter Your Email' name='email' required /> <br />
-                <input type="number" onChange={handleChange} placeholder='Enter Phone Number' name='phone' required /> <br />
-                <input type="password" onChange={handleChange} placeholder='Enter Your Password' name='password' required /> <br />
+                <input type="text" onChange={handleChange} placeholder='Enter Your Name' name='name' required/> <br />
+                <input type="email" onChange={handleChange} placeholder='Enter Your Email' name='email' required/> <br />
+                <input type="number" onChange={handleChange} placeholder='Enter Phone Number' name='phone' required/> <br />
+                <input type="password" onChange={handleChange} placeholder='Enter Your Password' name='password' required/> <br />
                 <input type="submit" value="SignUp Now" />
             </form>
         </div>
