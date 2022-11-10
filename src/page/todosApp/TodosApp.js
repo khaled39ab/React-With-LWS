@@ -1,8 +1,10 @@
+import React from 'react';
+import Todo from "./Todo";
 
 const TodosApp = () => {
     return (
         <div>
-            <h1>Todos App</h1>
+            <Todo></Todo>
         </div>
     )
 }
