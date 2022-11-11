@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Todo = () => {
+const Todo = (props) => {
     return (
         <div>
-            <h1>Todo</h1>
+            {
+                props.todos.map(todo=>{ <p>todo</p>})
+            }
         </div>
     )
 }
