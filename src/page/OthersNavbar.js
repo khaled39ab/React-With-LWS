@@ -12,6 +12,7 @@ const OthersNavbar = () => {
         display: 'flex',
         justifyContent: 'space-around'
     }
+    
     return (
         <div style={{ marginRight: '40px' }}>
             <ul>

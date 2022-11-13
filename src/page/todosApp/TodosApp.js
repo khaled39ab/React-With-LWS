@@ -1,5 +1,6 @@
 import React from 'react';
 import OthersNavbar from '../OthersNavbar';
+import NewTodo from './NewTodo';
 import Todo from "./Todo";
 
 const TodosApp = () => {
@@ -7,7 +8,10 @@ const TodosApp = () => {
     return (
         <div>
             <OthersNavbar></OthersNavbar>
-            <Todo todos={todos}></Todo>
+            <div style={{ 'margin': '50px', 'backgroundColor': 'gray', 'padding': '20px', 'textAlign': 'center', 'color': 'white' }}>
+                <NewTodo></NewTodo>
+                <Todo todos={todos}></Todo>
+            </div>
         </div>
     )
 }
