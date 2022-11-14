@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-const NewTodo = () => {
+const NewTodo = (props) => {
     const [todo, setTodo] = useState('');
 
     const handleInput = e =>{
@@ -10,7 +10,7 @@ const NewTodo = () => {
 
     const handleTodo = (e) => {
         e.preventDefault();
-        console.log(todo)
+        props.onTodo(todo)
         e.target.reset()
     }
     
