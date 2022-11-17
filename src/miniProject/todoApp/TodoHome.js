@@ -1,4 +1,5 @@
 import React from 'react';
+import './todoStyle.css'
 
 const TodoHome = () => {
     return (
@@ -8,8 +9,8 @@ const TodoHome = () => {
             </div>
             <hr />
             <hr />
-            <div>
-
+            <div className='todo' style={{ 'margin': '10px' }}>
+                <h2>Todo App</h2>
             </div>
         </div>
     );
