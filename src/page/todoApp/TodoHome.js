@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import OthersNavbar from '../OthersNavbar';
 import NewTodo from './NewTodo';
 import Todos from './Todos';
+import './TodoHome.css'
 
 const todosList = ['todo1', 'todo2', 'todo3'];
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import './NewTodo.css'
 import { useState } from 'react';
 
 const NewTodo = (props) => {
