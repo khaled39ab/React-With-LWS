@@ -3,7 +3,7 @@ import './Todo.css'
 
 const Todo = (props) => {
     return (
-        <article>
+        <article className='todo'>
             {props.todo}
         </article>
     )

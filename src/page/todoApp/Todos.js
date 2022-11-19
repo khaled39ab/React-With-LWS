@@ -5,7 +5,7 @@ import './Todos.css'
 const Todos = (props) => {
 
     return (
-        <section>
+        <section className='todos'>
             {
                 props.todos.map((todo, index) => <Todo
                     key={index}
