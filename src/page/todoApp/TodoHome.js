@@ -40,7 +40,6 @@ const TodoHome = () => {
         setTodos(prevTodos =>{
             return [...prevTodos, { id: uuidv4(), newTodo }]
         })
-        // console.log(todos);
     }
 
     return (

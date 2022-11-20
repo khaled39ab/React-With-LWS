@@ -3,7 +3,7 @@ import './Todo.css'
 
 const Todo = (props) => {
     const {title, desc} = props.todo;
-    console.log(props.todo);
+    
     return (
         <article className='todo'>
             <div className='todo-info'>

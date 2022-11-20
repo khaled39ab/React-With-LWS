@@ -3,7 +3,7 @@ import Todo from './Todo';
 import './Todos.css'
 
 const Todos = (props) => {
-    // console.log(props.todos);
+    
     return (
         <section className='todos'>
             {
