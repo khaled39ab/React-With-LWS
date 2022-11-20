@@ -15,7 +15,7 @@ const NewTodo = (props) => {
 
     const handleTodo = (e) => {
         e.preventDefault();
-        console.log(todo);
+        props.onNewTodo(todo);
         setTodo({ title: '', desc: '' })
     }
 

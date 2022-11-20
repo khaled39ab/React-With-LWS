@@ -33,7 +33,7 @@ const todosList = [
 ];
 
 const TodoHome = () => {
-    const [todos, setTodos] = useState(todosList);
+    const [todos, setTodos] = useState([]);
 
     const handleNewTodo = newTodo => {
         setTodos([...todos, newTodo])
@@ -44,7 +44,7 @@ const TodoHome = () => {
             <div style={{ 'margin': '10px', 'backgroundColor': 'gray', 'padding': '20px', 'color': 'white' }}>
                 <div className='container'>
                     <h1>Todo App</h1>
-                    <NewTodo onTodo={handleNewTodo}></NewTodo>
+                    <NewTodo onNewTodo={handleNewTodo}></NewTodo>
                     <Todos todos={todos}></Todos>
                 </div>
             </div>
