@@ -41,7 +41,7 @@ const TodoHome = () => {
     return (
         <div>
             <OthersNavbar></OthersNavbar>
-            <div style={{ 'margin': '50px', 'backgroundColor': 'gray', 'padding': '20px', 'textAlign': 'center', 'color': 'white' }}>
+            <div style={{ 'margin': '10px', 'backgroundColor': 'gray', 'padding': '20px', 'color': 'white' }}>
                 <div className='container'>
                     <h1>Todo App</h1>
                     <NewTodo onTodo={handleNewTodo}></NewTodo>

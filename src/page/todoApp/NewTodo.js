@@ -5,7 +5,7 @@ import { useState } from 'react';
 const NewTodo = (props) => {
     const [todo, setTodo] = useState('');
 
-    const handleInput = e =>{
+    const handleInput = e => {
         setTodo(e.target.value)
     }
 
@@ -14,15 +14,19 @@ const NewTodo = (props) => {
         props.onTodo(todo)
         e.target.reset()
     }
-    
+
     return (
-        <div>
-            <form onSubmit={handleTodo}>
-                <label htmlFor="newTodo">New Todo: </label>
-                <input type="text" name='todo' onChange={handleInput}/>
-                <button>Add Todo</button>
-            </form>
-        </div>
+        <form className='form' onSubmit={handleTodo}>
+            <div className='form-field'>
+                <label htmlFor="title">Title: </label>
+                <input type="text" name='title' id='title' onChange={handleInput} />
+            </div>
+            <div className='form-field'>
+                <label htmlFor="desc">Description:</label>
+                <textarea type="text" name="desc" id="desc" />
+            </div>
+            <button className='add-btn'>Add Todo</button>
+        </form>
     );
 };
 
