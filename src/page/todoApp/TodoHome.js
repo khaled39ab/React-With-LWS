@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import OthersNavbar from '../OthersNavbar';
 import NewTodo from './NewTodo';
 import Todos from './Todos';
 import './TodoHome.css'
 
-const todosList = [
+/* const todosList = [
     {
         id: 1,
         title: "Sleeping",
@@ -30,14 +31,18 @@ const todosList = [
         title: "Playing",
         desc: "I am playing for 1 hour"
     },
-];
+]; */
 
 const TodoHome = () => {
     const [todos, setTodos] = useState([]);
 
     const handleNewTodo = newTodo => {
-        setTodos([...todos, newTodo])
+        setTodos(prevTodos =>{
+            return [...prevTodos, { id: uuidv4(), newTodo }]
+        })
+        // console.log(todos);
     }
+
     return (
         <div>
             <OthersNavbar></OthersNavbar>

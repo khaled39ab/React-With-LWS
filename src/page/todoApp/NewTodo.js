@@ -8,8 +8,8 @@ const NewTodo = (props) => {
 
     const handleChange = e => {
         const name = e.target.name;
-        setTodo(oldValue => {
-            return { ...oldValue, [name]: e.target.value }
+        setTodo(prevValue => {
+            return { ...prevValue, [name]: e.target.value }
         })
     }
 
@@ -23,11 +23,11 @@ const NewTodo = (props) => {
         <form className='form' onSubmit={handleTodo}>
             <div className='form-field'>
                 <label htmlFor="title">Title: </label>
-                <input type="text" name='title' id='title' value={title} onChange={handleChange} />
+                <input type="text" name='title' id='title' required value={title} onChange={handleChange} />
             </div>
             <div className='form-field'>
                 <label htmlFor="desc">Description:</label>
-                <textarea type="text" name="desc" id="desc" value={desc} onChange={handleChange} />
+                <textarea type="text" name="desc" id="desc" required value={desc} onChange={handleChange} />
             </div>
             <button className='add-btn'>Add Todo</button>
         </form>
