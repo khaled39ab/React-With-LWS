@@ -12,6 +12,14 @@
     background-color: #111;
 }
 
+.todo-info{
+    display: flex;
+}
+
+.todo-info h3{
+    margin-right: 20px;
+}
+
 .delete-btn{
     cursor: pointer;
     color: red;
