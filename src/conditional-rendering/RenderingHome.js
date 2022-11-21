@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import OthersNavbar from '../page/OthersNavbar';
 import ConditionalRendering from './ConditionalRendering';
+import FAQs from './FAQ/FAQs';
 
 const RenderingHome = () => {
     const [toggle, setToggle] = useState(true);
@@ -21,10 +22,13 @@ const RenderingHome = () => {
                     <button onClick={() => setToggle(true)} style={{ color: 'white', backgroundColor: 'green', padding: '0.5rem' }}>Show</button>
                     <button style={{ color: 'white', backgroundColor: 'red', padding: '0.5rem' }} onClick={() => setToggle(false)}>Hide</button>
                      */}
-                    <button onClick={() => setToggle(!toggle)}>
+                    <button style={{ padding: '0.5rem', color: 'white', border: 'none', backgroundColor: toggle ? 'red' : 'green' }} onClick={() => setToggle(!toggle)}>
                         {toggle ? 'Hide' : 'Show'}
                     </button>
                 </div>
+            </div>
+            <div style={{ 'border': '4px solid cyan', 'padding': '20px', 'margin': '10px' }}>
+                <FAQs></FAQs>
             </div>
         </div>
     );
