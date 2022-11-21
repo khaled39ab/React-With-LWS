@@ -1,4 +1,6 @@
 import React from 'react';
+import FAQ from './FAQ';
+import './FAQs.css'
 
 const faqsData = [
     {
@@ -25,8 +27,16 @@ const faqsData = [
 
 const FAQs = () => {
     return (
-        <div style={{ color: 'white', backgroundColor: '#444' }}>
-            <h1 style={{ textAlign: 'center' }}>Frequently Ask Questions</h1>
+        <div className='faqs-container'>
+            <section className='faqs'>
+                <h1 style={{ textAlign: 'center' }}>Frequently Ask Questions</h1>
+                {
+                    faqsData.map(faq => <FAQ
+                        key={faq.id}
+                        faq={faq}
+                    ></FAQ>)
+                }
+            </section>
         </div>
     );
 };
