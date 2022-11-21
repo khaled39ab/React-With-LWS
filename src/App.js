@@ -11,8 +11,8 @@ import More from './HttpReq/More';
 import Others from './page/Others';
 import CardGroup from './page/cards/CardGroup';
 import AllProject from './miniProject/AllProject';
-import ConditionalRendering from './conditional-rendering/ConditionalRendering';
 import TodoHome from './page/todoApp/TodoHome';
+import RenderingHome from './conditional-rendering/RenderingHome';
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
         <Route path="/others" element={<Others></Others>}></Route>
         <Route path="/card" element={<CardGroup></CardGroup>}></Route>
         <Route path="/all-project" element={<AllProject></AllProject>}></Route>
-        <Route path="/conditional-rendering" element={<ConditionalRendering></ConditionalRendering>}></Route>
+        <Route path="/conditional-rendering" element={<RenderingHome></RenderingHome>}></Route>
         <Route path="/todo" element={<TodoHome></TodoHome>}></Route>
       </Routes>
       

@@ -26,7 +26,6 @@ class ConditionalRendering extends Component {
 
         return ( 
             <div>
-                <OthersNavbar></OthersNavbar>
                 {isLoggedIn ? <Permission></Permission>:<Login></Login>}
             </div>
         ) 
