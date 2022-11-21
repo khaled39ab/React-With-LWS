@@ -15,8 +15,12 @@ const TodoHome = () => {
     }
 
     const handleRemoveTodo = id => {
-        const filterTodos = todos.filter(todo => todo.id !== id)
-        setTodos(filterTodos)
+        // const filterTodos = todos.filter(todo => todo.id !== id)
+        // setTodos(filterTodos);
+        setTodos(prevTodos =>{
+            const filterTodos = prevTodos.filter(todo => todo.id !== id)
+            return filterTodos;
+        })
     }
 
     return (
