@@ -39,8 +39,8 @@ const Assignment3 = () => {
             <hr />
             <hr />
 
-            <div>
-                
+            <div className='assignment3'>
+
             </div>
         </div>
     );
