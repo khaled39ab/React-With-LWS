@@ -1,10 +1,25 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import './style3.css'
+
+const todosData = [
+    {
+      id: uuidv4(),
+      title: 'read react documentation',
+      desc: 'react documentation might be boring but I can do it'
+    },
+    {
+      id: uuidv4(),
+      title: 'do react assignment',
+      desc: 'react assignments might be boring but I can do it'
+    }
+  ];
 
 const Assignment3 = () => {
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '20px', 'margin': '10px' }}>
             <div>
-                <h1>React Assignment - 2 : Create new Resource</h1> <br />
+                <h1>React Assignment - 3 : Create new Resource</h1> <br />
 
                 <h4>Testing students skills on</h4>
 
