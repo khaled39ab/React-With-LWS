@@ -9,6 +9,7 @@ const AllProject = () => {
             <OthersNavbar></OthersNavbar>
             <Assignment1></Assignment1>
             <Assignment2></Assignment2>
+            
         </div>
     );
 };
