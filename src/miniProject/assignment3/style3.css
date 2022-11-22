@@ -86,6 +86,8 @@
   .todo-title {
     color: yellow;
     /* font-family: fantasy; */
+    display: flex;
+    justify-content: space-between;
   }
   @media screen and (max-width: 992px) {
     .task-todos {

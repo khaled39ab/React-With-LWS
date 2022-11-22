@@ -11,6 +11,7 @@ const TaskTodos = (props) => {
                 taskTodos.map(taskTodo => <TaskTodo
                     key={taskTodo.id}
                     taskTodo={taskTodo}
+                    onRemoveTodo={props.onRemoveTodo}
                 ></TaskTodo>)
             }
         </section>

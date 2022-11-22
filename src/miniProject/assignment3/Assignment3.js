@@ -20,11 +20,16 @@ const todosData = [
 
 const Assignment3 = () => {
     const [taskTodos, setTaskTodos] = useState(todosData);
-    // console.log(taskTodos);
+
     const handleTaskNewTodo = taskNewTodo => {
         setTaskTodos(prevTodos => {
-            return [...prevTodos, { id: uuidv4(), title:taskNewTodo.title, desc:taskNewTodo.desc }]
+            return [...prevTodos, { id: uuidv4(), title: taskNewTodo.title, desc: taskNewTodo.desc }]
         })
+    }
+
+    const handleRemoveTodo = id => {
+        const restTodo = taskTodos.filter(taskTodo => taskTodo.id !== id)
+        setTaskTodos(restTodo)
     }
 
     return (
@@ -69,7 +74,10 @@ const Assignment3 = () => {
                 <div className='task-container'>
                     <TaskNewTodo onNewTodo={handleTaskNewTodo} />
                     <h1 className='task-title'>Todo</h1>
-                    <TaskTodos taskTodos={taskTodos} />
+                    <TaskTodos
+                        taskTodos={taskTodos}
+                        onRemoveTodo={handleRemoveTodo}
+                    />
                 </div>
             </div>
         </div>
