@@ -3,8 +3,8 @@ import { useState } from 'react';
 import './style3.css';
 
 const TaskNewTodo = (props) => {
-    const [taskTodo, setTaskTodo] = useState({ taskTitle: '', taskDesc: '' })
-    const { taskTitle, taskDesc } = taskTodo;
+    const [taskTodo, setTaskTodo] = useState({ title: '', desc: '' })
+    const { title, desc } = taskTodo;
 
     const handleChange = e => {
         const fieldName = e.target.name;
@@ -16,7 +16,7 @@ const TaskNewTodo = (props) => {
     const handleSubmit = e => {
         e.preventDefault();
         props.onNewTodo(taskTodo)
-        setTaskTodo({ taskTitle: '', taskDesc: '' })
+        setTaskTodo({ title: '', desc: '' })
     }
 
     return (
@@ -30,7 +30,7 @@ const TaskNewTodo = (props) => {
                             type="text"
                             name="title"
                             id="title"
-                            value={taskTitle}
+                            value={title}
                             onChange={handleChange}
                             required
                         />
@@ -42,7 +42,7 @@ const TaskNewTodo = (props) => {
                             className='textarea'
                             name="desc"
                             id="desc"
-                            value={taskDesc}
+                            value={desc}
                             onChange={handleChange}
                             required></textarea>
                     </div>
