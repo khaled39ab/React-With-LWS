@@ -3,8 +3,8 @@ import './style3.css';
 import TaskTodo from './TaskTodo';
 
 const TaskTodos = (props) => {
-    const {taskTodos} = props;
-    
+    const { taskTodos } = props;
+
     return (
         <section className='task-todos'>
             {

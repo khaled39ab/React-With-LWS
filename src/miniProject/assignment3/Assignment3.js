@@ -2,23 +2,24 @@ import React from 'react';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './style3.css'
+import TaskNewTodo from './TaskNewTodo';
 import TaskTodos from './TaskTodos';
 
 const todosData = [
     {
-      id: uuidv4(),
-      title: 'read react documentation',
-      desc: 'react documentation might be boring but I can do it'
+        id: uuidv4(),
+        title: 'read react documentation',
+        desc: 'react documentation might be boring but I can do it'
     },
     {
-      id: uuidv4(),
-      title: 'do react assignment',
-      desc: 'react assignments might be boring but I can do it'
+        id: uuidv4(),
+        title: 'do react assignment',
+        desc: 'react assignments might be boring but I can do it'
     }
-  ];
+];
 
 const Assignment3 = () => {
-    const [taskTodos,setTaskTodos] = useState(todosData)
+    const [taskTodos, setTaskTodos] = useState(todosData)
 
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '20px', 'margin': '10px' }}>
@@ -59,7 +60,11 @@ const Assignment3 = () => {
             <hr />
 
             <div className='assignment3'>
-                <TaskTodos taskTodos={taskTodos}/>
+                <div className='task-container'>
+                    <TaskNewTodo />
+                    <h1 className='task-title'>Todo</h1>
+                    <TaskTodos taskTodos={taskTodos} />
+                </div>
             </div>
         </div>
     );
