@@ -1,5 +1,5 @@
 :root {
-    --border-radius: 0.6rem;
+    /* --border-radius: 0.6rem; */
     --text-color: #fff;
   }
   
@@ -13,15 +13,15 @@
     background-color: #4c4c4c;
   }
   
-  textarea {
+  /* textarea {
     resize: none;
     height: 5rem;
-  }
+  } */
   
-  .btn {
+  /* .btn {
     border: none;
     padding: 0.2rem;
-    border-radius: var(--border-radius);
+    border-radius: 0.6rem;
     transition: all 0.3s;
     background-color: #4c4c4c;
     color: white;
@@ -31,31 +31,31 @@
   .btn:hover {
     background-color: orange;
     color: black;
-  }
-  
+  } */
+/*   
   .container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
   
-  .title {
+  /* .title {
     text-align: center;
     margin: 1rem 0;
     color: white;
     font-size: 2rem;
-  }
+  } */
   
-  .card {
+  /* .card {
     background-color: #2c2c2c;
     padding: 1rem;
     border-radius: 0.6rem;
     width: 25rem;
     max-width: 100%;
-  }
+  } */
   
-  form {
+  /* form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -65,16 +65,16 @@
   .field-group {
     display: flex;
     flex-direction: column;
-  }
+  } */
   
-  .todos {
+  .task-todos {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     padding: 1rem;
     color: white;
     gap: 1rem;
   }
-  .todo {
+  .task-todo {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -83,22 +83,22 @@
     padding: 0.6rem;
     border-radius: 0.6rem;
   }
-  .todo__title {
+  .todo-title {
     color: yellow;
-    font-family: fantasy;
+    /* font-family: fantasy; */
   }
   @media screen and (max-width: 992px) {
-    .todos {
+    .task-todos {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   @media screen and (max-width: 768px) {
-    .todos {
+    .task-todos {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   @media screen and (max-width: 600px) {
-    .todos {
+    .task-todos {
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './style3.css'
+import TaskTodos from './TaskTodos';
 
 const todosData = [
     {
@@ -16,6 +18,8 @@ const todosData = [
   ];
 
 const Assignment3 = () => {
+    const [taskTodos,setTaskTodos] = useState(todosData)
+
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '20px', 'margin': '10px' }}>
             <div>
@@ -55,7 +59,7 @@ const Assignment3 = () => {
             <hr />
 
             <div className='assignment3'>
-
+                <TaskTodos taskTodos={taskTodos}/>
             </div>
         </div>
     );
