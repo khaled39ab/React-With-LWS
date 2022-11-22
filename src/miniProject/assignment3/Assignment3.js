@@ -28,8 +28,12 @@ const Assignment3 = () => {
     }
 
     const handleRemoveTodo = id => {
-        const restTodo = taskTodos.filter(taskTodo => taskTodo.id !== id)
-        setTaskTodos(restTodo)
+        // const restTodo = taskTodos.filter(taskTodo => taskTodo.id !== id);
+        // setTaskTodos(restTodo);
+        setTaskTodos( oldTodos =>{
+            const restTodo = taskTodos.filter(taskTodo => taskTodo.id !== id)
+            return restTodo;
+        })
     }
 
     return (
