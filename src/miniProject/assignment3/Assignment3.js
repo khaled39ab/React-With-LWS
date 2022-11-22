@@ -20,10 +20,10 @@ const todosData = [
 
 const Assignment3 = () => {
     const [taskTodos, setTaskTodos] = useState(todosData);
-
+    // console.log(taskTodos);
     const handleTaskNewTodo = taskNewTodo => {
         setTaskTodos(prevTodos => {
-            return [...prevTodos, { id: uuidv4(), taskNewTodo }]
+            return [...prevTodos, { id: uuidv4(), title:taskNewTodo.title, desc:taskNewTodo.desc }]
         })
     }
 
