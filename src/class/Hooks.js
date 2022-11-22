@@ -22,7 +22,14 @@ const Hooks = () => {
             <h2>React hooks example</h2>
             <ul>
                 <li>useState</li>
-                <li>useEffect</li>
+                <li>useEffect: 
+                    <strong>
+                        <ul>
+                            <li>Make sure don't use useEffect on loops, condition or nested function.</li>
+                            <li>Use for fetching data, timers or direct update DOM</li>
+                        </ul>
+                    </strong>
+                </li>
                 <li>useContext</li>
                 <li>useRef</li>
                 <li>useReducer</li>
