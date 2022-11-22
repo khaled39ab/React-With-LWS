@@ -14,10 +14,9 @@ import AllProject from './miniProject/AllProject';
 import TodoHome from './page/todoApp/TodoHome';
 import RenderingHome from './conditional-rendering/RenderingHome';
 
-
 function App() {
   return (
-    <div>
+    <>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
@@ -32,9 +31,8 @@ function App() {
         <Route path="/all-project" element={<AllProject></AllProject>}></Route>
         <Route path="/conditional-rendering" element={<RenderingHome></RenderingHome>}></Route>
         <Route path="/todo" element={<TodoHome></TodoHome>}></Route>
-      </Routes>
-      
-    </div>
+      </Routes>      
+    </>
   );
 }
 
