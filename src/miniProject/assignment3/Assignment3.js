@@ -19,7 +19,13 @@ const todosData = [
 ];
 
 const Assignment3 = () => {
-    const [taskTodos, setTaskTodos] = useState(todosData)
+    const [taskTodos, setTaskTodos] = useState(todosData);
+
+    const handleTaskNewTodo = taskNewTodo => {
+        setTaskTodos(prevTodos => {
+            return [...prevTodos, { id: uuidv4(), taskNewTodo }]
+        })
+    }
 
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '20px', 'margin': '10px' }}>
@@ -61,7 +67,7 @@ const Assignment3 = () => {
 
             <div className='assignment3'>
                 <div className='task-container'>
-                    <TaskNewTodo />
+                    <TaskNewTodo onNewTodo={handleTaskNewTodo} />
                     <h1 className='task-title'>Todo</h1>
                     <TaskTodos taskTodos={taskTodos} />
                 </div>

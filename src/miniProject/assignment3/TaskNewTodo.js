@@ -2,16 +2,23 @@ import React from 'react';
 import { useState } from 'react';
 import './style3.css';
 
-const TaskNewTodo = () => {
-    const [taskTodo, setTaskTodo] = useState()
+const TaskNewTodo = (props) => {
+    const [taskTodo, setTaskTodo] = useState({ taskTitle: '', taskDesc: '' })
+    const { taskTitle, taskDesc } = taskTodo;
 
-    const handleChange = () =>{
-
+    const handleChange = e => {
+        const fieldName = e.target.name;
+        setTaskTodo(prevValue => {
+            return { ...prevValue, [fieldName]: e.target.value }
+        })
     }
 
-    const handleSubmit = () =>{
-
+    const handleSubmit = e => {
+        e.preventDefault();
+        props.onNewTodo(taskTodo)
+        setTaskTodo({ taskTitle: '', taskDesc: '' })
     }
+
     return (
         <div>
             <h1 className="title">Collect Data from a Form</h1>
@@ -23,7 +30,7 @@ const TaskNewTodo = () => {
                             type="text"
                             name="title"
                             id="title"
-                            // value={taskTodo.title}
+                            value={taskTitle}
                             onChange={handleChange}
                             required
                         />
@@ -35,7 +42,7 @@ const TaskNewTodo = () => {
                             className='textarea'
                             name="desc"
                             id="desc"
-                            // value={taskTodo.desc}
+                            value={taskDesc}
                             onChange={handleChange}
                             required></textarea>
                     </div>
