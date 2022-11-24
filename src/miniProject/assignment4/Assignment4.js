@@ -11,7 +11,7 @@ const Assignment4 = () => {
                 <ul>
                     <li>useEffect() hook</li>
                     <li>error handling when loading data</li>
-                    <li>Custom hook</li>
+                    <li>using custom hook</li>
                 </ul>
 
                 <br />
