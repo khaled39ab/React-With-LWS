@@ -1,4 +1,5 @@
 import React from 'react';
+import './style4.css'
 
 const Assignment4 = () => {
     return (
@@ -29,6 +30,14 @@ const Assignment4 = () => {
             <hr />
             <hr />
 
+            <div className='assignment4'>
+                <div className="container4">
+                    <h1 className="title4">Users Management App</h1>
+                    {/* {isLoading && <p>Loading users...</p>} */}
+                    {/* {error && <p>{error}</p>} */}
+                    {/* step3 : pass the users data to Users component  */}
+                </div>
+            </div>
         </div>
     );
 };

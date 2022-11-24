@@ -8,28 +8,28 @@
     background-color: #4c4c4c;
   }
   
-  .container {
+  .container4 {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .title {
+  .title4 {
     text-align: center;
     margin: 1rem 0;
     color: white;
     font-size: 2rem;
   }
   
-  .users {
+  .users4 {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     padding: 1rem;
     color: white;
     gap: 1rem;
   }
-  .user {
+  .user4 {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -39,30 +39,30 @@
     border-radius: 0.6rem;
     transition: all 0.3s;
   }
-  .user:hover {
+  .user4:hover {
     background-color: black;
   }
-  .user__name {
+  .user4-name {
     color: yellow;
   }
-  .user__phone {
+  .user4-phone {
     color: white;
   }
-  .user__phone:hover {
+  .user4-phone:hover {
     text-decoration: underline;
   }
   @media screen and (max-width: 992px) {
-    .users {
+    .users4 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   @media screen and (max-width: 768px) {
-    .users {
+    .users4 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   @media screen and (max-width: 600px) {
-    .users {
+    .users4 {
       width: 100%;
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
