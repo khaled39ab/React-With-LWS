@@ -1,7 +1,12 @@
 import React from 'react';
 import './style4.css'
+import useFetch from './useFetch';
+import User4 from './User4';
+import Users4 from './Users4';
 
 const Assignment4 = () => {
+    const [users, setUsers] = useFetch(null);
+    // console.log(users);
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '20px', 'margin': '10px' }}>
             <div>
@@ -36,6 +41,9 @@ const Assignment4 = () => {
                     {/* {isLoading && <p>Loading users...</p>} */}
                     {/* {error && <p>{error}</p>} */}
                     {/* step3 : pass the users data to Users component  */}
+                    {
+                        // <User4 users={users}/>
+                    }
                 </div>
             </div>
         </div>
