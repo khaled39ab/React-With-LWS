@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style4.css'
 import useFetch from './useFetch';
 import User4 from './User4';
 import Users4 from './Users4';
 
 const Assignment4 = () => {
-    const [users, setUsers] = useFetch(null);
-    // console.log(users);
+    const [users, setUsers] = useState(null);
+
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(data => setUsers(data))
+    }, [])
+
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '20px', 'margin': '10px' }}>
             <div>
