@@ -3,7 +3,7 @@ import User4 from './User4';
 import './style4.css'
 
 const Users4 = (props) => {
-    console.log(props.users);
+    // console.log(props.users);
     return (
         <section className="users4">
             {props.users.map((user) => (
