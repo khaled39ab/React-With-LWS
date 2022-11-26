@@ -40,9 +40,6 @@ const Assignment4 = () => {
             <div className='assignment4'>
                 <div className="container4">
                     <h1 className="title4">Users Management App</h1>
-                    {/* {isLoading && <p>Loading users...</p>} */}
-                    {/* {error && <p>{error}</p>} */}
-                    {/* step3 : pass the users data to Users component  */}
                     {
                         error && errorMessage
                     }

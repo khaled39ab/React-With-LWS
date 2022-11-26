@@ -2,7 +2,7 @@ import React from 'react';
 import './style4.css'
 
 const User4 = ({ id, name, email, phone }) => {
-    // console.log(name, phone);
+    
     return (
         <article className="user4">
             <h3>{id}</h3>
