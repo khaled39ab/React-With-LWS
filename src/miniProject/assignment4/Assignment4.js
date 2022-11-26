@@ -1,39 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './style4.css'
 import useFetch from './useFetch';
 import Users4 from './Users4';
 
 const Assignment4 = () => {
-    // const [users, setUsers] = useState(null);
-    // const [isLoading, setIsLoading] = useState(true);
-    // const [error, setError] = useState(null)
-
-
-    // useEffect(() => {
-    //     // setTimeout(()=>{
-    //     fetch("https://jsonplaceholder.typicode.com/users")
-    //         .then(res => {
-    //             if (!res.ok) {
-    //                 throw Error('Fetching is not successful...!')
-    //             }
-    //             else {
-    //                 return res.json()
-    //             }
-    //         })
-    //         .then((data) => {
-    //             setUsers(data)
-    //             setIsLoading(false)
-    //             setError(null)
-    //         })
-    //         .catch(err => {
-    //             setError(err.message)
-    //             setIsLoading(false)
-    //         })
-    //     // }, 2000)
-    // }, [])
     const { users, isLoading, error } = useFetch("https://jsonplaceholder.typicode.com/users")
 
     const loadingMessage = <p>Users is Loading...</p>
+    const errorMessage = <p style={{ color: 'red' }}>{error}</p>
 
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '20px', 'margin': '10px' }}>
@@ -70,7 +44,7 @@ const Assignment4 = () => {
                     {/* {error && <p>{error}</p>} */}
                     {/* step3 : pass the users data to Users component  */}
                     {
-                        error && <p style={{ color: 'red' }}>{error}</p>
+                        error && errorMessage
                     }
                     {
                         isLoading && loadingMessage
