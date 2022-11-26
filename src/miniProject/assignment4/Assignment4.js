@@ -6,11 +6,15 @@ import Users4 from './Users4';
 
 const Assignment4 = () => {
     const [users, setUsers] = useState(null);
+    
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(res => res.json())
-            .then(data => setUsers(data))
+        // setTimeout(() => {
+            fetch("https://jsonplaceholder.typicode.com/users")
+                .then(res => res.json())
+                .then(data => setUsers(data))
+                // console.log(users);
+        // }, 3000)
     }, [])
 
     return (
@@ -48,7 +52,7 @@ const Assignment4 = () => {
                     {/* {error && <p>{error}</p>} */}
                     {/* step3 : pass the users data to Users component  */}
                     {
-                        // <User4 users={users}/>
+                        <Users4 users={users} />
                     }
                 </div>
             </div>

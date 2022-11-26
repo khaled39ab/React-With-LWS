@@ -6,9 +6,9 @@ const Users4 = (props) => {
     console.log(props.users);
     return (
         <section className="users4">
-            {/* {props.users.map((user) => (
+            {props.users.map((user) => (
                 <User4 key={user.id} {...user} />
-            ))} */}
+            ))}
         </section>
     );
 };
