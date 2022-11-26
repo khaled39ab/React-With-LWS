@@ -1,20 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import './style4.css'
 import useFetch from './useFetch';
-import User4 from './User4';
 import Users4 from './Users4';
 
 const Assignment4 = () => {
     const [users, setUsers] = useState(null);
-    
+    const [isLoading, setIsLoading] = useState(true);
+
+    const loadingMessage = <p>Users is Loading...</p>
 
     useEffect(() => {
-        // setTimeout(() => {
+        setTimeout(()=>{
             fetch("https://jsonplaceholder.typicode.com/users")
-                .then(res => res.json())
-                .then(data => setUsers(data))
-                // console.log(users);
-        // }, 3000)
+            .then(res => res.json())
+            .then((data) => {
+                setUsers(data)
+                setIsLoading(false)
+            })
+        }, 2000)
     }, [])
 
     return (
@@ -52,7 +55,10 @@ const Assignment4 = () => {
                     {/* {error && <p>{error}</p>} */}
                     {/* step3 : pass the users data to Users component  */}
                     {
-                        <Users4 users={users} />
+                        isLoading && loadingMessage
+                    }
+                    {
+                        users && <Users4 users={users}/>
                     }
                 </div>
             </div>
