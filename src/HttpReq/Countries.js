@@ -15,7 +15,7 @@ const Countries = () => {
         gridGap: '25px',
         padding: '15px'
     }
-    
+
     axios.get('https://restcountries.com/v3.1/all')
         .then(res => {
             setCountries(res.data);
@@ -26,15 +26,16 @@ const Countries = () => {
         });
 
     const handleSearch = searchValue =>{
-        const value = searchValue.toLowerCase();
+        let value = searchValue.toLowerCase();
         const newCountries = countries.filter(country => {
             const countryName = country.name.common.toLowerCase();
             return countryName.startsWith(value);
         });
-        setFilteredCountries(newCountries)
+        setCountries(newCountries)
         // console.log(newCountries);
-        console.log(filteredCountries);
+        // console.log(filteredCountries);
     }
+
     return (
         <Fragment>
 
@@ -45,7 +46,7 @@ const Countries = () => {
                 <SearchCountry onSearch={handleSearch}></SearchCountry>
                 <div style={countriesStyle}>
                     {
-                        filteredCountries.map(country =>
+                        countries.map(country =>
                             <CountryInfo
                                 country={country}
                                 key={country.cca3}

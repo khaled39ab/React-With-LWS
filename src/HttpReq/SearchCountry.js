@@ -19,7 +19,7 @@ const SearchCountry = (props) => {
 
     useEffect(()=>{
         props.onSearch(search)
-    },[search])
+    },[search, props])
 
     return (
         <div style={{textAlign: 'center', margin: '15px'}}>
