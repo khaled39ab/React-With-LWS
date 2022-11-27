@@ -1,10 +1,10 @@
 import React from 'react';
-import Country from '../HttpReq/Country';
+import Countries from '../HttpReq/Countries';
 const HttpReq = () => {
     
     return (
         <div>
-            <Country></Country>
+            <Countries></Countries>
         </div>
     );
 };

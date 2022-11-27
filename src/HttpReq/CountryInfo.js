@@ -20,7 +20,7 @@ const CountryInfo = ({ country }) => {
     }
 
     return (
-        <div style={countryStyle} data-hover="countryStyle">
+        <article style={countryStyle} data-hover="countryStyle">
             <style>{`[data-hover="countryStyle"]:hover {
                 transform: scale(1.1) ;
             }`}</style>
@@ -29,7 +29,7 @@ const CountryInfo = ({ country }) => {
             <h4>Area: {area} sq.km</h4>
             <h4>Population: {population}</h4>
             <img style={imgStyle} src={flags.svg} alt="" />
-        </div>
+        </article>
     );
 };
 

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import CountryInfo from './CountryInfo';
 import HttpNavbar from './HttpNavbar';
 
-const Country = () => {
+const Countries = () => {
     const [countries, setCountries] = useState([]);
 
     const countriesStyle = {
@@ -26,7 +26,7 @@ const Country = () => {
 
             <HttpNavbar></HttpNavbar>
 
-            <div>
+            <section>
                 <h1 style={{ color: 'brown', fontSize: '3rem', textAlign: 'center', marginTop: '20px' }}>Introduce Country</h1>
                 <div style={countriesStyle}>
                     {
@@ -38,10 +38,10 @@ const Country = () => {
                         )
                     }
                 </div>
-            </div>
+            </section>
 
         </Fragment>
     );
 };
 
-export default Country;
+export default Countries;
