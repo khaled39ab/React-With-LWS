@@ -7,6 +7,9 @@ import SearchCountry from './SearchCountry';
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+    const loadingMessage = <h3 style={{ color: 'red', textAlign: 'center' }}>Data is Loading....</h3>
 
     const countriesStyle = {
         display: 'grid',
@@ -18,12 +21,13 @@ const Countries = () => {
     axios.get('https://restcountries.com/v3.1/all')
         .then(res => {
             setCountries(res.data);
+            setIsLoading(false)
         })
         .catch(err => {
             console.log(err);
         });
 
-    const handleSearch = searchValue =>{
+    const handleSearch = searchValue => {
         let value = searchValue.toLowerCase();
         const newCountries = countries.filter(country => {
             const countryName = country.name.common.toLowerCase();
@@ -40,6 +44,9 @@ const Countries = () => {
             <section>
                 <h1 style={{ color: 'brown', fontSize: '3rem', textAlign: 'center', marginTop: '20px' }}>Introduce Country</h1>
                 <SearchCountry onSearch={handleSearch}></SearchCountry>
+                {
+                    isLoading && loadingMessage
+                }
                 <div style={countriesStyle}>
                     {
                         countries.map(country =>
