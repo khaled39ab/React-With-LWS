@@ -5,14 +5,14 @@ const HttpNavbar = () => {
     const listStyle = {
         textDecoration: 'none',
         fontSize: '28px',
-        backgroundColor: 'yellowgreen',
+        backgroundColor: 'cadetblue',
         padding: '10px',
         marginTop: '0',
         display: 'flex',
         justifyContent: 'space-around'
     }
     return (
-        <div style={{ marginRight: '40px' }}>
+        <div style={{ marginLeft: '40px', marginRight: '40px' }}>
             <ul>
                 <li style={listStyle}>
                     <Link className='link' to={'/get'}>Get</Link>

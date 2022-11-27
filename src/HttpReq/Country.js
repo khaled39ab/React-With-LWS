@@ -10,7 +10,7 @@ const Country = () => {
     const countriesStyle = {
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
-        gridGap: '15px',
+        gridGap: '25px',
         padding: '15px'
     }
     axios.get('https://restcountries.com/v3.1/all')
@@ -26,18 +26,20 @@ const Country = () => {
 
             <HttpNavbar></HttpNavbar>
 
-            <h1 style={{ color: 'blue' }}>Introduce Country</h1>
-            <div style={countriesStyle}>
-                {
-                    countries.map(country =>
-                        <CountryInfo
-                            country={country}
-                            key={country.cca3}
-                        ></CountryInfo>
-                    )
-                }
+            <div>
+                <h1 style={{ color: 'brown', fontSize: '3rem', textAlign: 'center', marginTop: '20px' }}>Introduce Country</h1>
+                <div style={countriesStyle}>
+                    {
+                        countries.map(country =>
+                            <CountryInfo
+                                country={country}
+                                key={country.cca3}
+                            ></CountryInfo>
+                        )
+                    }
+                </div>
             </div>
-            
+
         </Fragment>
     );
 };
