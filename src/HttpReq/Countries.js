@@ -7,6 +7,7 @@ import SearchCountry from './SearchCountry';
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
+    const [filteredCountries,setFilteredCountries] = useState(countries);
 
     const countriesStyle = {
         display: 'grid',
@@ -14,14 +15,26 @@ const Countries = () => {
         gridGap: '25px',
         padding: '15px'
     }
+    
     axios.get('https://restcountries.com/v3.1/all')
         .then(res => {
             setCountries(res.data);
+            setFilteredCountries(res.data)
         })
         .catch(err => {
             console.log(err);
         });
 
+    const handleSearch = searchValue =>{
+        const value = searchValue.toLowerCase();
+        const newCountries = countries.filter(country => {
+            const countryName = country.name.common.toLowerCase();
+            return countryName.startsWith(value);
+        });
+        setFilteredCountries(newCountries)
+        // console.log(newCountries);
+        console.log(filteredCountries);
+    }
     return (
         <Fragment>
 
@@ -29,10 +42,10 @@ const Countries = () => {
 
             <section>
                 <h1 style={{ color: 'brown', fontSize: '3rem', textAlign: 'center', marginTop: '20px' }}>Introduce Country</h1>
-                <SearchCountry></SearchCountry>
+                <SearchCountry onSearch={handleSearch}></SearchCountry>
                 <div style={countriesStyle}>
                     {
-                        countries.map(country =>
+                        filteredCountries.map(country =>
                             <CountryInfo
                                 country={country}
                                 key={country.cca3}

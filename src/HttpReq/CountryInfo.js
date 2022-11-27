@@ -11,8 +11,6 @@ const CountryInfo = ({ country }) => {
         padding: '10px'
     }
 
-
-
     const imgStyle = {
         width: '250px',
         height: '150px',
