@@ -7,7 +7,6 @@ import SearchCountry from './SearchCountry';
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
-    const [filteredCountries,setFilteredCountries] = useState(countries);
 
     const countriesStyle = {
         display: 'grid',
@@ -19,7 +18,6 @@ const Countries = () => {
     axios.get('https://restcountries.com/v3.1/all')
         .then(res => {
             setCountries(res.data);
-            setFilteredCountries(res.data)
         })
         .catch(err => {
             console.log(err);
@@ -32,8 +30,6 @@ const Countries = () => {
             return countryName.startsWith(value);
         });
         setCountries(newCountries)
-        // console.log(newCountries);
-        // console.log(filteredCountries);
     }
 
     return (
