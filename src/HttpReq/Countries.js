@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import { useState } from 'react';
 import CountryInfo from './CountryInfo';
 import HttpNavbar from './HttpNavbar';
+import SearchCountry from './SearchCountry';
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
@@ -28,6 +29,7 @@ const Countries = () => {
 
             <section>
                 <h1 style={{ color: 'brown', fontSize: '3rem', textAlign: 'center', marginTop: '20px' }}>Introduce Country</h1>
+                <SearchCountry></SearchCountry>
                 <div style={countriesStyle}>
                     {
                         countries.map(country =>
