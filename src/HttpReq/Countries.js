@@ -8,8 +8,10 @@ import SearchCountry from './SearchCountry';
 const Countries = () => {
     const [countries, setCountries] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    const loadingMessage = <h3 style={{ color: 'red', textAlign: 'center' }}>Data is Loading....</h3>
+    const loadingMessage = <h2 style={{ color: 'red', textAlign: 'center' }}>Data is Loading....</h2>
+    const errorMessage = <h2 style={{ color: 'red', textAlign: 'center' }}>Data Can't Load...</h2>
 
     const countriesStyle = {
         display: 'grid',
@@ -24,7 +26,8 @@ const Countries = () => {
             setIsLoading(false)
         })
         .catch(err => {
-            console.log(err);
+            setIsLoading(false)
+            setError(err);
         });
 
     const handleSearch = searchValue => {
@@ -46,6 +49,9 @@ const Countries = () => {
                 <SearchCountry onSearch={handleSearch}></SearchCountry>
                 {
                     isLoading && loadingMessage
+                }
+                {
+                    error && errorMessage
                 }
                 <div style={countriesStyle}>
                     {
