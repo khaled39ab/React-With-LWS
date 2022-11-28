@@ -34,7 +34,7 @@ const Signup = () => {
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', 'textAlign': 'center' }}>
             <h1>SignUp Page</h1>
-            <form action="" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <input type="text" onChange={(e) =>setFname(e.target.value)} placeholder='Enter First Name' name='fname' required /> <br />
                 <input type="text" onChange={(e) =>setLname(e.target.value)} placeholder='Enter Last Name' name='lname' required /> <br />
                 <input type="email" onChange={(e) =>setEmail(e.target.value)} placeholder='Enter Your Email' name='email' required /> <br />

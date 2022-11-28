@@ -26,7 +26,7 @@ const MultipleInput = () => {
     return (
         <div style={{ 'border': '4px solid cyan', 'padding': '10px', 'margin': '10px', 'textAlign': 'center' }}>
             <h1>Handle multiple input</h1>
-            <form action="" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <h4>Input your data</h4>
                 <p>
                     <strong>Name: {name}</strong> <br />
