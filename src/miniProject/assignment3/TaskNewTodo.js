@@ -23,7 +23,7 @@ const TaskNewTodo = (props) => {
         <div>
             <h1 className="title">Collect Data from a Form</h1>
             <div className="card">
-                <form action="" onSubmit={handleSubmit}>
+                <form className='form3' onSubmit={handleSubmit}>
                     <div className="field-group">
                         <label htmlFor="title">Title: </label>
                         <input
