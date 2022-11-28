@@ -13,6 +13,7 @@ import AllProject from './miniProject/AllProject';
 import TodoHome from './page/todoApp/TodoHome';
 import RenderingHome from './conditional-rendering/RenderingHome';
 import Countries from './HttpReq/Countries';
+import UseReducer from './page/reducer/UseReducer';
 
 function App() {
   return (
@@ -29,9 +30,10 @@ function App() {
         <Route path="/others" element={<Others></Others>}></Route>
         <Route path="/card" element={<CardGroup></CardGroup>}></Route>
         <Route path="/all-project" element={<AllProject></AllProject>}></Route>
-        <Route path="/conditional-rendering" element={<RenderingHome></RenderingHome>}></Route>
+        <Route path="/conditional-rendering" element={<RenderingHome />}></Route>
         <Route path="/todo" element={<TodoHome></TodoHome>}></Route>
-      </Routes>      
+        <Route path='/reducer' element={<UseReducer />}></Route>
+      </Routes>
     </>
   );
 }
