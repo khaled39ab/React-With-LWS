@@ -10,17 +10,25 @@ const bookList = [
     { id: 105, name: 'Jemon Chilen Tini' }
 ]
 
+const Modal = ({ modalText }) => {
+    return <p style={{ color: 'green', marginBottom: '20px' }}>{modalText}</p>
+}
+
 const UseReducer = () => {
     const [books, setBooks] = useState(bookList);
-    const [bookName, setBookName] = useState('')
+    const [bookName, setBookName] = useState('');
+    const [modalText, setModalText] = useState('');
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleAddBook = e => {
         e.preventDefault();
-        setBooks((prevValue)=>{
-            const newBook = {id:new Date().getTime(), name: bookName};
+        setBooks((prevValue) => {
+            const newBook = { id: new Date().getTime(), name: bookName };
             return [...prevValue, newBook]
         });
-        setBookName('')
+        setIsModalOpen(true);
+        setModalText('Book is Added')
+        setBookName('');
     }
 
     return (
@@ -37,6 +45,10 @@ const UseReducer = () => {
                     />
                     <button>Add Book</button>
                 </form>
+
+                {
+                    isModalOpen && <Modal modalText={modalText} />
+                }
 
                 {
                     books.map(book => {
