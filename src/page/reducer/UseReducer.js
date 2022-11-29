@@ -18,13 +18,13 @@ const Modal = ({ modalText }) => {
 }
 
 const UseReducer = () => {
-/* 
-    const [bookState, dispatch] = useReducer(reducer, {
-        books: bookList,
-        isModalOpen: true,
-        modalText: ''
-    });
- */
+    /* 
+        const [bookState, dispatch] = useReducer(reducer, {
+            books: bookList,
+            isModalOpen: true,
+            modalText: ''
+        });
+     */
     const initialState = {
         books: bookList,
         isModalOpen: true,
@@ -36,6 +36,7 @@ const UseReducer = () => {
     const handleAddBook = e => {
         e.preventDefault();
         /*   
+        <=========  without useReducer   ==========>
           setBooks((prevValue) => {
               const newBook = { id: new Date().getTime(), name: bookName };
               return [...prevValue, newBook]
@@ -43,6 +44,7 @@ const UseReducer = () => {
           setIsModalOpen(true);
           setModalText('Book is Added');
         */
+       
         const newBook = { id: new Date().getTime(), name: bookName }
         dispatch({ type: 'ADD', payload: newBook })
         setBookName("");

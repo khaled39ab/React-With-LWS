@@ -1,5 +1,6 @@
 export const reducer = (state, action) => {
     /*   
+    <===============        with useState       ===============>
      const [books, setBooks] = useState(bookList);
      const [modalText, setModalText] = useState('');
      const [isModalOpen, setIsModalOpen] = useState(false);
