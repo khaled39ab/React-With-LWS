@@ -33,6 +33,15 @@ const UseReducer = () => {
                 modalText: 'Book is Added'
             }
         }
+        if(action.type === "REMOVE"){
+            const filteredBook = [...state.books].filter(book =>book.id !== action.payload);
+            return {
+                ...state,
+                books: filteredBook,
+                isModalOpen: true,
+                modalText: "Book is Removed"
+            }
+        }
         return state;
     }
 
@@ -56,6 +65,10 @@ const UseReducer = () => {
         const newBook = { id: new Date().getTime(), name: bookName }
         dispatch({ type: 'ADD', payload: newBook })
         setBookName("");
+    }
+
+    const handleRemove = (id) => {
+        dispatch({ type: "REMOVE", payload: id })
     }
 
     return (
@@ -82,7 +95,10 @@ const UseReducer = () => {
                 {
                     bookState.books.map(book => {
                         const { id, name } = book;
-                        return <li key={id}>{name}</li>
+                        return <li key={id}>
+                            {name}
+                            <button onClick={() => handleRemove(id)}>Remove</button>
+                        </li>
                     })
                 }
             </div>
