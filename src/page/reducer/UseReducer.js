@@ -1,4 +1,5 @@
 import React from 'react';
+import { useReducer } from 'react';
 import { useState } from 'react';
 import OthersNavbar from '../OthersNavbar';
 
@@ -15,20 +16,45 @@ const Modal = ({ modalText }) => {
 }
 
 const UseReducer = () => {
-    const [books, setBooks] = useState(bookList);
-    const [bookName, setBookName] = useState('');
-    const [modalText, setModalText] = useState('');
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    /*   
+      const [books, setBooks] = useState(bookList);
+      const [modalText, setModalText] = useState('');
+      const [isModalOpen, setIsModalOpen] = useState(false);
+   */
+
+    const reducer = (state, action) => {
+        if (action.type === 'ADD') {
+            const allBooks = [...state.books, action.payload]
+            return {
+                ...state,
+                books: allBooks,
+                isModalOpen: true,
+                modalText: 'Book is Added'
+            }
+        }
+        return state;
+    }
+
+    const [bookState, dispatch] = useReducer(reducer, {
+        books: bookList,
+        isModalOpen: true,
+        modalText: ''
+    });
+    const [bookName, setBookName] = useState("");
 
     const handleAddBook = e => {
         e.preventDefault();
-        setBooks((prevValue) => {
-            const newBook = { id: new Date().getTime(), name: bookName };
-            return [...prevValue, newBook]
-        });
-        setIsModalOpen(true);
-        setModalText('Book is Added')
-        setBookName('');
+        /*   
+          setBooks((prevValue) => {
+              const newBook = { id: new Date().getTime(), name: bookName };
+              return [...prevValue, newBook]
+          });
+          setIsModalOpen(true);
+          setModalText('Book is Added');
+        */
+        const newBook = { id: new Date().getTime(), name: bookName }
+        dispatch({ type: 'ADD', payload: newBook })
+        setBookName("");
     }
 
     return (
@@ -41,17 +67,19 @@ const UseReducer = () => {
                         type="text"
                         placeholder='Add New Book'
                         defaultValue={bookName}
-                        onChange={(e) => setBookName(e.target.value)}
+                        onChange={(e) => {
+                            setBookName(e.target.value)
+                        }}
                     />
-                    <button>Add Book</button>
+                    <button type='submit'>Add Book</button>
                 </form>
 
                 {
-                    isModalOpen && <Modal modalText={modalText} />
+                    bookState.isModalOpen && <Modal modalText={bookState.modalText} />
                 }
 
                 {
-                    books.map(book => {
+                    bookState.books.map(book => {
                         const { id, name } = book;
                         return <li key={id}>{name}</li>
                     })
