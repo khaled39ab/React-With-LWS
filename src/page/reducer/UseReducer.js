@@ -3,6 +3,7 @@ import React from 'react';
 import { useReducer } from 'react';
 import { useState } from 'react';
 import OthersNavbar from '../OthersNavbar';
+import { reducer } from './reducer'
 
 const bookList = [
     { id: 101, name: 'Fik-hus Sirah' },
@@ -17,39 +18,19 @@ const Modal = ({ modalText }) => {
 }
 
 const UseReducer = () => {
-    /*   
-      const [books, setBooks] = useState(bookList);
-      const [modalText, setModalText] = useState('');
-      const [isModalOpen, setIsModalOpen] = useState(false);
-   */
-
-    const reducer = (state, action) => {
-        if (action.type === 'ADD') {
-            const allBooks = [...state.books, action.payload]
-            return {
-                ...state,
-                books: allBooks,
-                isModalOpen: true,
-                modalText: 'Book is Added'
-            }
-        }
-        if(action.type === "REMOVE"){
-            const filteredBook = [...state.books].filter(book =>book.id !== action.payload);
-            return {
-                ...state,
-                books: filteredBook,
-                isModalOpen: true,
-                modalText: "Book is Removed"
-            }
-        }
-        return state;
-    }
-
+/* 
     const [bookState, dispatch] = useReducer(reducer, {
         books: bookList,
         isModalOpen: true,
         modalText: ''
     });
+ */
+    const initialState = {
+        books: bookList,
+        isModalOpen: true,
+        modalText: ''
+    }
+    const [bookState, dispatch] = useReducer(reducer, initialState);
     const [bookName, setBookName] = useState("");
 
     const handleAddBook = e => {
