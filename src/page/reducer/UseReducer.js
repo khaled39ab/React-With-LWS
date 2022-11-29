@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useReducer } from 'react';
 import { useState } from 'react';
@@ -66,7 +67,7 @@ const UseReducer = () => {
                     <input
                         type="text"
                         placeholder='Add New Book'
-                        defaultValue={bookName}
+                        value={bookName}
                         onChange={(e) => {
                             setBookName(e.target.value)
                         }}
