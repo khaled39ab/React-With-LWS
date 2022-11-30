@@ -7,9 +7,9 @@ const Context4 = () => {
     const { id, name } = data;
     return (
         <div>
-            <h3>{id}</h3>
-            <h3>{name}</h3>
-            <h3>I am child 4 component and got message from "{text}"</h3>
+            <h3>Id: {id}</h3>
+            <h3>Name: {name}</h3>
+            <h3>I am child 4 component and got a message from parent -- "{text}"</h3>
         </div>
     );
 };

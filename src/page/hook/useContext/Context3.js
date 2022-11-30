@@ -8,7 +8,7 @@ const Context3 = () => {
     return (
         <div>
             <Context4 />
-            <h3>I am child 3 component and I got a message from "{text}"</h3>
+            <h3>I am child 3 component and I got a message from parent -- "{text}"</h3>
         </div>
     );
 };

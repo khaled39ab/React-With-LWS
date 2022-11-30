@@ -6,7 +6,7 @@ const Context1 = () => {
     const data = {
         id: 101, name: 'Fulan'
     }
-    const [text, setText] = useState('I am from parent component')
+    const [text, setText] = useState('I am your parent')
 
     return (
         <DataContext.Provider value={{data, text}}>
