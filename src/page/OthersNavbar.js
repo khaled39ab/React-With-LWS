@@ -22,7 +22,7 @@ const OthersNavbar = () => {
                     <Link className='link' to={'/all-project'}>All Mini Project</Link>
                     <Link className='link' to={'/conditional-rendering'}>Conditional Rendering</Link>
                     <Link className='link' to={'/todo'}>Todo App</Link>
-                    <Link className='link' to={'/reducer'}>Reducer</Link>
+                    <Link className='link' to={'/hook'}>Hooks</Link>
                 </li>
             </ul>
         </div>

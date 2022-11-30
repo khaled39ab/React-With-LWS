@@ -2,7 +2,6 @@
 import React from 'react';
 import { useReducer } from 'react';
 import { useState } from 'react';
-import OthersNavbar from '../OthersNavbar';
 import { reducer } from './reducer'
 
 const bookList = [
@@ -27,7 +26,7 @@ const UseReducer = () => {
      */
     const initialState = {
         books: bookList,
-        isModalOpen: true,
+        isModalOpen: false,
         modalText: ''
     }
     const [bookState, dispatch] = useReducer(reducer, initialState);
@@ -56,7 +55,6 @@ const UseReducer = () => {
 
     return (
         <>
-            <OthersNavbar />
             <div style={{ textAlign: 'center' }}>
                 <h1>Book List</h1>
                 <form onSubmit={handleAddBook}>
@@ -67,6 +65,7 @@ const UseReducer = () => {
                         onChange={(e) => {
                             setBookName(e.target.value)
                         }}
+                        required
                     />
                     <button type='submit'>Add Book</button>
                 </form>

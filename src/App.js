@@ -13,7 +13,7 @@ import AllProject from './miniProject/AllProject';
 import TodoHome from './page/todoApp/TodoHome';
 import RenderingHome from './conditional-rendering/RenderingHome';
 import Countries from './HttpReq/Countries';
-import UseReducer from './page/reducer/UseReducer';
+import Hook from './page/hook/Hook';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
         <Route path="/all-project" element={<AllProject></AllProject>}></Route>
         <Route path="/conditional-rendering" element={<RenderingHome />}></Route>
         <Route path="/todo" element={<TodoHome></TodoHome>}></Route>
-        <Route path='/reducer' element={<UseReducer />}></Route>
+        <Route path='/hook' element={<Hook/>}></Route>
       </Routes>
     </>
   );
