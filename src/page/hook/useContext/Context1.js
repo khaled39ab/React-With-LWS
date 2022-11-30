@@ -1,5 +1,6 @@
 import React from 'react';
 import Context2 from './Context2';
+import { DataContext } from './DataContext';
 
 const Context1 = () => {
     const data = {
@@ -7,9 +8,9 @@ const Context1 = () => {
     }
 
     return (
-        <div>
-            <Context2 data={data}/>
-        </div>
+        <DataContext.Provider value={data}>
+            <Context2 />
+        </DataContext.Provider>
     );
 };
 
