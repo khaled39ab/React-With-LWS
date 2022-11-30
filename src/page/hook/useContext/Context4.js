@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { DataContext } from './DataContext';
 
 const Context4 = () => {
-    const data = useContext(DataContext)
+    const {data} = useContext(DataContext)
     const { id, name } = data;
     return (
         <div>
