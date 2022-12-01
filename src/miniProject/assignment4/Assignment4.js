@@ -6,7 +6,7 @@ import Users4 from './Users4';
 const Assignment4 = () => {
     const { users, isLoading, error } = useFetch("https://jsonplaceholder.typicode.com/users")
 
-    const loadingMessage = <p>Users is Loading...</p>
+    const loadingMessage = <p style={{ color: 'white' }}>Users is Loading...</p>
     const errorMessage = <p style={{ color: 'red' }}>{error}</p>
 
     return (
