@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Blogs = () => {
+const Blogs = ({ blog }) => {
+
     return (
-        <div>
-            
-        </div>
+        <article style={{ margin: '20px' }}>
+            <h3>{blog.title}</h3>
+            <p>{blog.desc}</p>
+        </article>
     );
 };
 

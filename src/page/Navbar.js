@@ -13,6 +13,7 @@ const Navbar = () => {
                 <NavLink className='link' to={'/class'}>Class</NavLink>
                 <NavLink className='link' to={'/others'}>Others</NavLink>
                 <NavLink className='link' to={'/http'}>Http Req</NavLink>
+                <NavLink className='link' to={'/dynamic-route'}>Dynamic Route</NavLink>
             </nav>
         </div>
     );

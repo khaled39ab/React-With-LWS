@@ -14,6 +14,7 @@ import TodoHome from './page/todoApp/TodoHome';
 import RenderingHome from './conditional-rendering/RenderingHome';
 import Countries from './HttpReq/Countries';
 import Hook from './page/hook/Hook';
+import DynamicRoute from './page/dynamic-routing/DynamicRoute';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/conditional-rendering" element={<RenderingHome />}></Route>
         <Route path="/todo" element={<TodoHome></TodoHome>}></Route>
         <Route path='/hook' element={<Hook/>}></Route>
+        <Route path='/dynamic-route' element={<DynamicRoute/>}></Route>
       </Routes>
     </>
   );
