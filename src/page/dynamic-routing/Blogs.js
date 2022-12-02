@@ -14,7 +14,8 @@ const Blogs = ({ blog }) => {
     return (
         <article style={{ margin: '20px' }}>
             <h3>{blog.title}</h3>
-            <p>{sliceStr(blog.desc, 100)}</p>
+            <p>{sliceStr(blog.desc, 100)} <button>Learn More</button></p>
+            
         </article>
     );
 };
