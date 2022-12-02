@@ -1,7 +1,18 @@
 .navbar{
     background-color: bisque;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: 8vh;
     font-size: 30px;
+    display: grid;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .active{
+    color: red;
 }
