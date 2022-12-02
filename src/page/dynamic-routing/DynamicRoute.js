@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Blogs from './Blogs';
 import DynamicNavbar from './DynamicNavbar';
+import './DynamicNavbar.css'
 
 const blogsData = [
     {
@@ -39,7 +40,7 @@ const DynamicRoute = () => {
     return (
         <div>
             <DynamicNavbar />
-            
+
             <h1>Blogs:</h1>
             {
                 blogs.map(blog => <Blogs

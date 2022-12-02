@@ -15,6 +15,7 @@ import RenderingHome from './conditional-rendering/RenderingHome';
 import Countries from './HttpReq/Countries';
 import Hook from './page/hook/Hook';
 import DynamicRoute from './page/dynamic-routing/DynamicRoute';
+import Error from './page/Error';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/todo" element={<TodoHome></TodoHome>}></Route>
         <Route path='/hook' element={<Hook/>}></Route>
         <Route path='/dynamic-route' element={<DynamicRoute/>}></Route>
+        <Route path='*' element={<Error/>}></Route>
       </Routes>
     </>
   );
