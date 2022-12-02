@@ -39,7 +39,7 @@ const DynamicRoute = () => {
 
     return (
         <div>
-            <DynamicNavbar />
+            <DynamicNavbar></DynamicNavbar>
 
             <h1>Blogs:</h1>
             {
