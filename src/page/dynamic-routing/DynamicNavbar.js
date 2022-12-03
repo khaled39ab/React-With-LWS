@@ -5,7 +5,7 @@ const DynamicNavbar = () => {
     return (
         <div className='navbar'>
             <nav>
-                <Link className='link' to={'/dynamic-home'}>Dynamic Home</Link>
+                <Link className='link' to={'/dynamic-home'}>Home</Link>
                 <Link className='link' to={'/blogs'}>Blogs</Link>
                 <Link className='link' to={'/contact'}>Contact</Link>
             </nav>

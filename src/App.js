@@ -17,6 +17,7 @@ import Hook from './page/hook/Hook';
 import DynamicRoute from './page/dynamic-routing/DynamicRoute';
 import Error from './page/Error';
 import Blogs from './page/dynamic-routing/Blogs';
+import Contact from './page/dynamic-routing/Contact';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path='/dynamic-route' element={<DynamicRoute/>}></Route>
         <Route path='/dynamic-home' element={<DynamicRoute/>}></Route>
         <Route path='/blogs' element={<Blogs/>}></Route>
+        <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='*' element={<Error/>}></Route>
       </Routes>
     </>

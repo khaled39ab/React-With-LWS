@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Blog from './Blog';
+import { blogsData } from './blogsData';
+import DynamicNavbar from './DynamicNavbar';
 
-const Blogs = ({ blog }) => {
-
-    const sliceStr = (str, num) => {
-        if (str.length > num) {
-            return str.slice(0, num) + '...'
-        }
-        else {
-            return str;
-        }
-    }
+const Blogs = () => {
+    const [blogs, setBlogs] = useState(blogsData);
 
     return (
-        <article style={{ margin: '20px' }}>
-            <h3>{blog.title}</h3>
-            <p>{sliceStr(blog.desc, 100)} <button>Learn More</button></p>
-            
-        </article>
+        <div>
+            <DynamicNavbar />
+            <h1>Blogs:</h1>
+            {
+                blogs.map(blog => <Blog
+                    key={blog.id}
+                    blog={blog}
+                ></Blog>)
+            }
+        </div>
+
     );
 };
 
