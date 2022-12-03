@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Blog = ({ blog }) => {
     const sliceStr = (str, num) => {
@@ -12,7 +13,7 @@ const Blog = ({ blog }) => {
     return (
         <article style={{ margin: '20px' }}>
             <h3>{blog.title}</h3>
-            <p>{sliceStr(blog.desc, 100)} <button>Learn More</button></p>
+            <p>{sliceStr(blog.desc, 100)} <Link to={blog.title}>Learn More</Link></p>
 
         </article>
     );
