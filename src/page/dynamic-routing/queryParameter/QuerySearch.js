@@ -1,13 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import DynamicNavbar from '../DynamicNavbar';
 
 const QuerySearch = () => {
+    const [searchParam, setSearchParams] = useSearchParams()
     const [name, setName] = useState('');
     const [age, setAge] = useState(0);
 
-    const handleSubmit = e =>{
+    const handleSubmit = e => {
         e.preventDefault();
+        setSearchParams({ name: name , age: age})
+        console.log(searchParam);
     }
 
     return (
