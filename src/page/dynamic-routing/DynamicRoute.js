@@ -8,7 +8,7 @@ const DynamicRoute = () => {
     return (
         <div>
             <DynamicNavbar></DynamicNavbar>
-
+            
             <h1>Home</h1>
         </div>
     );

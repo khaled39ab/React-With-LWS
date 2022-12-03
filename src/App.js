@@ -37,7 +37,6 @@ function App() {
         <Route path="/conditional-rendering" element={<RenderingHome />}></Route>
         <Route path="/todo" element={<TodoHome></TodoHome>}></Route>
         <Route path='/hook' element={<Hook/>}></Route>
-        <Route path='/dynamic-route' element={<DynamicRoute/>}></Route>
         <Route path='/dynamic-home' element={<DynamicRoute/>}></Route>
         <Route path='/blogs' element={<Blogs/>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>

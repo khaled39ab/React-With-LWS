@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const DynamicNavbar = () => {
     return (
         <div className='navbar'>
             <nav>
-                <Link className='link' to={'/dynamic-home'}>Home</Link>
-                <Link className='link' to={'/blogs'}>Blogs</Link>
-                <Link className='link' to={'/contact'}>Contact</Link>
+                <NavLink className='link' to={'/dynamic-home'}>Home</NavLink>
+                <NavLink className='link' to={'/blogs'}>Blogs</NavLink>
+                <NavLink className='link' to={'/contact'}>Contact</NavLink>
             </nav>
         </div>
     );

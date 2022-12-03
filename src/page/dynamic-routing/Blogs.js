@@ -9,13 +9,15 @@ const Blogs = () => {
     return (
         <div>
             <DynamicNavbar />
-            <h1>Blogs:</h1>
-            {
-                blogs.map(blog => <Blog
-                    key={blog.id}
-                    blog={blog}
-                ></Blog>)
-            }
+            <section>
+                <h1>Blogs:</h1>
+                {
+                    blogs.map(blog => <Blog
+                        key={blog.id}
+                        blog={blog}
+                    ></Blog>)
+                }
+            </section>
         </div>
 
     );

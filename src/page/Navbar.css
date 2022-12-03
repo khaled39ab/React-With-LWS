@@ -14,12 +14,16 @@
     text-decoration: line-through;
 }
 .nav{
-    font-size: 32px;
+    font-size: 5vh;
 }
 
 .link{
     margin-right: 30px;
     text-decoration: none;
     color: white;
+}
+
+.nav .active{
+    color: yellow;
 }
 
