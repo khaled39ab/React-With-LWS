@@ -19,6 +19,7 @@ import Error from './page/Error';
 import Blogs from './page/dynamic-routing/Blogs';
 import Contact from './page/dynamic-routing/Contact';
 import Details from './page/dynamic-routing/Details';
+import QuerySearch from './page/dynamic-routing/queryParameter/QuerySearch';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path='/blogs' element={<Blogs/>}></Route>
         <Route path='/blogs/:title' element={<Details></Details>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
+        <Route path='/query-search' element={<QuerySearch></QuerySearch>}></Route>
         <Route path='*' element={<Error/>}></Route>
       </Routes>
     </>

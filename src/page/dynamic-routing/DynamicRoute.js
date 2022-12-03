@@ -9,7 +9,7 @@ const DynamicRoute = () => {
         <div>
             <DynamicNavbar></DynamicNavbar>
             
-            <h1>Home</h1>
+            <h1>Dynamic Home</h1>
         </div>
     );
 };

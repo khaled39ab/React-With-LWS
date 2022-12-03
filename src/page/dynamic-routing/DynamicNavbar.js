@@ -8,6 +8,7 @@ const DynamicNavbar = () => {
                 <NavLink className='link' to={'/dynamic-home'}>Home</NavLink>
                 <NavLink className='link' to={'/blogs'}>Blogs</NavLink>
                 <NavLink className='link' to={'/contact'}>Contact</NavLink>
+                <NavLink className='link' to={'/query-search'}>Query Search</NavLink>
             </nav>
         </div>
     );
