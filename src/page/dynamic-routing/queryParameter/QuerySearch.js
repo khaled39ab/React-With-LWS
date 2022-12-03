@@ -10,8 +10,8 @@ const QuerySearch = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        setSearchParams({ name: name , age: age})
-        console.log(searchParam);
+        setSearchParams({ name: name, age: age })
+        e.target.reset();
     }
 
     return (
@@ -24,6 +24,7 @@ const QuerySearch = () => {
                         type="text"
                         placeholder='Name'
                         onChange={(e) => setName(e.target.value)}
+                        required
                     /> <br />
                     <input
                         type="text"
