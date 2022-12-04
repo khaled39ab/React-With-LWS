@@ -6,7 +6,6 @@ const Contact = () => {
     return (
         <div>
             <DynamicNavbar />
-            {/* <LoginPage /> */}
             <h1>Contact Page</h1>
         </div>
     );
