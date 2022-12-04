@@ -24,10 +24,9 @@ import ProtectedRoute from './page/ProtectedRoute';
 import { useState } from 'react';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <>
-      <Navbar isLoggedIn={isLoggedIn}></Navbar>
+      <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/class" element={<Class></Class>}></Route>
@@ -43,9 +42,9 @@ function App() {
         <Route path="/todo" element={<TodoHome></TodoHome>}></Route>
         <Route path='/hook' element={<Hook />}></Route>
         <Route path='/dynamic-home' element={
-          <ProtectedRoute>
+          // <ProtectedRoute>
             <DynamicRoute />
-          </ProtectedRoute>
+          // </ProtectedRoute>
         }></Route>
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/blogs/:title' element={<Details></Details>}></Route>
