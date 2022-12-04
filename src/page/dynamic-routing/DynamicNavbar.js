@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import LoginPage from './LoginPage';
 
 const DynamicNavbar = () => {
     return (
@@ -9,6 +10,7 @@ const DynamicNavbar = () => {
                 <NavLink className='link' to={'/blogs'}>Blogs</NavLink>
                 <NavLink className='link' to={'/contact'}>Contact</NavLink>
                 <NavLink className='link' to={'/query-search'}>Query Search</NavLink>
+                <Link><LoginPage /></Link>
             </nav>
         </div>
     );
