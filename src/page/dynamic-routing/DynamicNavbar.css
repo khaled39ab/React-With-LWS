@@ -16,3 +16,10 @@ nav{
 nav .active{
     color: red;
 }
+
+.login-btn{
+    border: none;
+    border-radius: 1rem;
+    padding: .3rem 1rem;
+    font-size: 1.5rem;
+}

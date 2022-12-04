@@ -1,6 +1,5 @@
 import React from 'react';
 import DynamicNavbar from './DynamicNavbar';
-import LoginPage from './LoginPage';
 
 const Contact = () => {
     return (

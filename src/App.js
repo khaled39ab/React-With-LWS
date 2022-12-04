@@ -20,11 +20,14 @@ import Blogs from './page/dynamic-routing/Blogs';
 import Contact from './page/dynamic-routing/Contact';
 import Details from './page/dynamic-routing/Details';
 import QuerySearch from './page/dynamic-routing/queryParameter/QuerySearch';
+import ProtectedRoute from './page/ProtectedRoute';
+import { useState } from 'react';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar isLoggedIn={isLoggedIn}></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/class" element={<Class></Class>}></Route>
@@ -38,13 +41,17 @@ function App() {
         <Route path="/all-project" element={<AllProject></AllProject>}></Route>
         <Route path="/conditional-rendering" element={<RenderingHome />}></Route>
         <Route path="/todo" element={<TodoHome></TodoHome>}></Route>
-        <Route path='/hook' element={<Hook/>}></Route>
-        <Route path='/dynamic-home' element={<DynamicRoute/>}></Route>
-        <Route path='/blogs' element={<Blogs/>}></Route>
+        <Route path='/hook' element={<Hook />}></Route>
+        <Route path='/dynamic-home' element={
+          <ProtectedRoute>
+            <DynamicRoute />
+          </ProtectedRoute>
+        }></Route>
+        <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/blogs/:title' element={<Details></Details>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/query-search' element={<QuerySearch></QuerySearch>}></Route>
-        <Route path='*' element={<Error/>}></Route>
+        <Route path='*' element={<Error />}></Route>
       </Routes>
     </>
   );

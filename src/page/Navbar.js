@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 
 const Navbar = () => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
     return (
         <div className='navbar-container'>
             <div className='icon'>
@@ -14,6 +16,17 @@ const Navbar = () => {
                 <NavLink className='link' to={'/others'}>Others</NavLink>
                 <NavLink className='link' to={'/http'}>Http Req</NavLink>
                 <NavLink className='link' to={'/dynamic-home'}>Dynamic Route</NavLink>
+                {isLoggedIn ?
+                    <button
+                        style={{ color: 'red' }}
+                        className='login-btn'
+                        onClick={() => setIsLoggedIn(!isLoggedIn)}
+                    >Log Out</button> :
+                    <button
+                        style={{ color: 'green' }}
+                        className='login-btn'
+                        onClick={() => setIsLoggedIn(!isLoggedIn)}
+                    >Log In</button>}
             </nav>
         </div>
     );
