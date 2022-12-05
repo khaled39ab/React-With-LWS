@@ -20,8 +20,7 @@ import Blogs from './page/dynamic-routing/Blogs';
 import Contact from './page/dynamic-routing/Contact';
 import Details from './page/dynamic-routing/Details';
 import QuerySearch from './page/dynamic-routing/queryParameter/QuerySearch';
-import ProtectedRoute from './page/ProtectedRoute';
-import { useState } from 'react';
+// import ProtectedRoute from './page/ProtectedRoute';
 
 function App() {
   return (
