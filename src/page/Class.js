@@ -11,22 +11,24 @@ import ClassComponent from './../reactComponent/ClassComponent';
 import ForceUpdate from './../reactComponent/ForceUpdate';
 import Hooks from '../class/Hooks';
 import NestedMapping from '../components/NestedMapping';
+import ReactMemo from '../class/ReactMemo';
 
 const Class = () => {
     return (
         <div>
-            <AboutReact/>
-            <VirtualDom/>
-            <Prerequisites/>
-            <Jsx/>
-            <Component/>
-            <State/>
-            <EventHandling/>
-            <Rendering/>
-            <ClassComponent/>
-            <ForceUpdate/>
+            <AboutReact />
+            <VirtualDom />
+            <Prerequisites />
+            <Jsx />
+            <Component />
+            <State />
+            <EventHandling />
+            <Rendering />
+            <ClassComponent />
+            <ForceUpdate />
             <Hooks></Hooks>
             <NestedMapping></NestedMapping>
+            <ReactMemo />
         </div>
     );
 };
